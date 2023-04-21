@@ -3,7 +3,7 @@
 @use '../utils/mixins' as *;
 
     .header {
-        z-index: 500;
+        z-index: 100;
         position: fixed;
         top: 0;
         left: 0;
@@ -19,9 +19,10 @@
         box-shadow: 0 8px 32px 0 rgba(0 0 0 / 15%);
 
         @media(min-width: 650px) {
-
             height: 110px;
+            justify-content: center;
         }
+        background-color: red;
 
         &-nav {
             z-index: 100;
@@ -41,10 +42,8 @@
             transform: translateX(100%);
             transition: transform .3s ease-in-out;
 
-
             @media(min-width: 650px) {
                 width: max-content;
-                left: 50%;
                 height: inherit;
                 transform: translateX(0);
                 flex-direction: row;
@@ -53,6 +52,18 @@
                 padding: 10px 45px;
                 background-color: transparent;
                 box-shadow: none;
+            }
+            
+            @media(min-width: 650px) and (max-width: 1023px) {
+                right: 0;
+            }
+
+            @media(min-width: 1024px) and (max-width: 1429px) {
+                right: 60px;
+            }
+
+            @media (min-width: 1430px) {
+                left: 50%;
             }
         }
 
