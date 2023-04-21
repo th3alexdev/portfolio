@@ -134,3 +134,16 @@
 //     grid-template-columns: 5fr 3fr;
 //     grid-template-rows: auto;
 // }
+
+
+/* animations */
+
+.card {
+    &:nth-child(1) {
+        animation-delay: .5s;
+    }
+    
+    &:nth-child(2) {
+        animation-delay: .8s;
+    }
+}
