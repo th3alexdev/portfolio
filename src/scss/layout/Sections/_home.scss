@@ -105,13 +105,6 @@
 
 
 // ? animations 
-.home-slide-in-blurred {
-    animation-name: slide-in-blurred;
-    animation-duration: .55s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-    filter: opacity(0);
-}
 
 .greeting {
     &-hello {
@@ -127,34 +120,6 @@
 }
 
 .home-picture-container {
-    animation-name: slide-right-blurred;
-    animation-duration: .8s;
-    animation-delay: .7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-    opacity: 0;
-    transform: translateX(-50px);
+  animation-delay: .7s;
 }
 
-@keyframes slide-right-blurred {
-    0% {
-        transform: translateX(-30px);
-        filter: blur(5px);
-    }
-    100% {
-        transform: translateX(0);
-        filter: blur(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-in-blurred {
-    0% {
-        transform: translateY(-50px);
-        filter: blur(5px);
-    }
-    100% {
-        transform: translateY(0);
-        filter: blur(0);
-    }
-}
