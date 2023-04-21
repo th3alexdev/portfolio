@@ -1,0 +1,15 @@
+@use './variables' as v;
+@use './functions' as f;
+
+%section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 85px 22px; 
+
+}
+
+%centered {
+    display: grid;
+    place-items: center;
+}

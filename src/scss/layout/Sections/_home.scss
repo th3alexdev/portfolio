@@ -1,0 +1,160 @@
+@use '../../utils/variables' as v;
+@use '../../utils/functions' as f;
+@use '../../utils/mixins' as *;
+@use '../../utils/extends' as *;
+
+.home { /* Father */
+    width: 100%;
+    margin-bottom: 130px;
+    padding: 55px 22px 150px 22px; 
+
+    @media(min-width: 1023px) {
+        height: calc(100vh - 115px);
+        margin-bottom: 110px;
+        padding: 85px 22px 10px 22px; 
+    }
+
+
+    display: flex;
+    justify-content: center;
+
+    outline: 1px solid #f00;
+
+    &-container { // Block
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        max-width: 85%;
+    }
+
+    &__introduce { // Son 
+        flex-shrink: 1;
+        flex-basis: 60%;
+        margin-bottom: 150px;
+    }
+
+    &__profile { // Son 
+        flex-shrink: 0;
+        flex-basis: 40%;
+        // overflow: hidden;
+    }
+
+    &__introduce, &__profile {
+        outline: 1px solid #fff;
+    }
+}
+
+.home-introduce { /* Father */
+    &-container {
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__text-box {
+        z-index: 0;
+        position: relative;
+    }
+}
+
+.home-picture { /* Father */
+
+    &-container {
+        
+        position: relative;
+        width: 100%;
+        max-width: max-content;
+        height: 100%;
+        margin: 0 auto;
+
+    }
+}
+
+
+
+.home {
+
+
+    @media(min-width: 650px) and (max-width: 1022px) {
+        padding: 110px 50px 20px 50px; 
+    }
+
+    &__introduce {
+        @media (min-width: 1023px) {
+            width: 45%;
+            margin-bottom: 0;
+        }
+    }
+
+    &__profile {
+        @media (min-width: 1023px) {
+            width: max-content
+        }
+    }
+
+    &-container {
+        @media (min-width: 1023px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+// ? animations 
+.home-slide-in-blurred {
+    animation-name: slide-in-blurred;
+    animation-duration: .55s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    filter: opacity(0);
+}
+
+.greeting {
+    &-hello {
+        animation-delay: .3s;
+    }
+    &-name {
+        animation-delay: .45s;
+    }
+}
+
+.text--principal {
+    animation-delay: .55s;
+}
+
+.home-picture-container {
+    animation-name: slide-right-blurred;
+    animation-duration: .8s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+@keyframes slide-right-blurred {
+    0% {
+        transform: translateX(-30px);
+        filter: blur(5px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-blurred {
+    0% {
+        transform: translateY(-50px);
+        filter: blur(5px);
+    }
+    100% {
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}

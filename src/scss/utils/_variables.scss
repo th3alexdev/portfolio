@@ -1,0 +1,43 @@
+
+    $shadow: 1px 1px 10px rgba(0 0 0 / 0.1);
+    $weights: 300, 400, 500, 600, 700;
+
+    $theme-default: (
+        // titles 
+        'title-color-primary': #fff,
+        'title-color-secondary': #373530,
+
+        // texts
+        'text-color-primary': #9c9eae, 
+        'text-color-secondary': #7f818c,
+        
+        // backgrounds
+        'bg-color-primary': #181e30,
+        'bg-color-secondary': #343a4e,
+        'about-bg-color': #f1f0f0,
+
+
+        // links
+        'link-color': #9c9eae,
+        'link-color-active': #fff,
+
+        // gradients
+        'yellow-gradient':  "background: linear-gradient(to right, #FFEE92 0%, #ffc74e 100%)",
+        'blue-gradient':  "background: linear-gradient(0deg, rgba(204,204,255,1) 0%, rgba(218,232,254,1) 100%)",
+
+        // secondary
+        'yellow-contrast': #ffd461,
+        'yellow-contrast-hover': #916c062b,
+        'light-gray': #a8b2d1
+    );
+
+    $bks: (
+        'mb-s': 320px,
+        'mb-md': 375px,
+        'mb-l': 425px,
+        'tablet-s': 610px,
+        'tablet-md': 768px,
+        'laptop-s': 1024px,
+        'laptop-l': 1440px,
+        'laptop-uw': 2000px
+    )

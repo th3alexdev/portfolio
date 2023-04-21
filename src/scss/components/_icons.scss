@@ -1,0 +1,67 @@
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as *;
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+
+    &--card{
+        z-index: 50;
+        position: relative;
+        transition: transform .1s ease-in;
+    }
+
+    &--arrow-ne {
+        filter: invert(1);
+    }
+
+    &--link {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 15px;
+    }
+}
+
+.sidebar-icon {
+    width: 29px;
+    height: 29px;
+
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: inline-block;
+    transition: transform .3s,  background-image 10s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &--github {
+        background-image: url("../assets/icons/contact/github.svg");
+        
+        &:hover {
+            background-image: url('../assets/icons/contact/github-active-yellow.svg');
+        }
+    }
+
+    &--twitter {
+        background-image: url("../assets/icons/contact/twitter.svg");
+        
+        &:hover {
+            background-image: url('../assets/icons/contact/twitter-active-yellow.svg');
+        }
+    }
+
+    &--linkedin {
+        background-image: url("../assets/icons/contact/linkedin.svg");
+        
+        &:hover {
+            background-image: url('../assets/icons/contact/linkedin-active-yellow.svg');
+        }
+    }
+}

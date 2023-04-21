@@ -1,0 +1,131 @@
+ 
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+
+    $color: #ffd461;
+    $size: 30px;
+  
+    // .burger-cont {
+    //     display: flex;
+    //     flex-direction: row;
+    // }
+
+      .burger-pos {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        // background-color: red;
+
+        @media(min-width: 650px) {
+          display: none;
+      }
+      }
+
+    .burger-cont {
+      z-index: 200;
+      position: absolute;
+      top: 55%;
+      right: 10px;
+      transform: translate(0, -50%);
+      margin: auto;
+    }
+    
+@mixin pill(){
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 12%;
+    background: $color;
+    // border-radius: $size;
+    transition: all .5s cubic-bezier(.1, .9, 0, 1.2);
+
+  }
+  
+    .wrapper{
+    display: block;
+    position:relative;
+    width: $size;
+      height: $size;
+    filter: drop-shadow(0px 0px 3px rgba(0 0 0 / 35%));
+
+    .bun{
+      // box-shadow: 0 0 10px 0 rgba(0 0 0 / 100%);
+
+      
+      &:before{
+        @include pill();
+        top: 10%;
+        right:0;
+
+      }
+  
+      &:after{
+        @include pill();
+        bottom: 10%;
+        left:0;
+
+      }
+  
+      .burger{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: $size;
+        width: $size;
+  
+        &:before, &:after{
+          @include pill();
+
+        }
+      }
+    }
+    
+    // .bun {
+    //   &:before, &:after {
+    //     box-shadow: 0 0 10px 0 red;
+    //   }
+    // }
+    // .burger{
+    //    &::before {
+    //     box-shadow: 0 0 10px 0 red;
+    // }
+    // } 
+
+    .btn--burger{
+      display:block;
+      position: absolute;
+      opacity: 0;
+      z-index: 1;
+      width:$size;
+      height:$size;
+      cursor:pointer;
+      &:hover ~ .bun{
+        &:before, &:after, :before, :after{
+        background: darken($color,5);
+        }
+      }
+      
+      &:checked ~ .bun{
+
+        &:before, &:after{
+        width:0;
+
+        }
+        .burger{
+
+          &:before{
+
+            transform:rotate(135deg);
+          }
+
+          &:after{
+
+          transform:rotate(45deg);
+            box-shadow:0 0 0 0 lighten($color,35);
+
+          }
+        }
+      }
+    }
+    
+  }

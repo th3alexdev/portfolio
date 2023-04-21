@@ -1,0 +1,61 @@
+
+    @use '../utils/variables' as v;
+    @use '../utils/functions' as f;
+    // @use '../utils/mixins' as *;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        @each $name, $color in v.$theme-default {
+            --#{$name}: #{$color};
+        }
+        --theme: 'default';
+    }
+
+    body {
+        margin: 0;
+        padding-top: 85px;
+
+        @media(min-width:1024px) {
+            padding-top: 110px;
+        }
+
+        color: f.getColor('text-color-primary');
+        background-color: f.getColor('bg-color-primary');
+    }
+
+    h1, h2, h3, h4, h5 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    b {
+        font-weight: inherit;
+    }

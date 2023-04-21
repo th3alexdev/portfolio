@@ -1,0 +1,90 @@
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as *;
+
+.words {
+    // &-box {
+    //     background-color: red;
+    // }
+
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+
+        position: relative;
+        top: 0; 
+        animation: slide 16s steps(5) infinite;
+        // background-color: blue;
+
+
+        // white-space: nowrap;
+        // overflow: hidden;
+        // border-right: 2px solid;
+        
+        // animation: typing 2s steps(15), blink .5s step-end infinite alternate;
+    }
+}
+
+.word {
+    position: relative;
+    line-height: 50px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        
+        background: linear-gradient(
+            0deg,
+            rgba(200, 222, 253, 1) 0%,
+            rgba(218, 232, 254, 1) 100%
+          );
+        // background-color: green;
+        border-left: 5px solid #222;
+        animation: typing  3s steps(10) infinite;
+        transform: translateY(-50%);
+    }
+}
+
+
+@keyframes typing {
+    0% {
+        left: 0
+   }
+    50% {
+        left: calc(100% + 8px)
+   }
+    100% {
+        left: 0
+    }
+}
+      
+
+@keyframes slide {
+    0% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(calc(-100% - 210px));
+    }
+}
+
+
+
+// @keyframes blink {
+    //     50% {
+    //         border-color: transparent
+    //     }
+    // }
+    
+    // @keyframes typing {
+    //     from {
+    //       width: 0
+    //     }
+    // }

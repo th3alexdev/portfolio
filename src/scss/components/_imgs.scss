@@ -1,0 +1,68 @@
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+
+.img {
+    pointer-events: none;
+
+    &--arrow-pointing-down {
+        z-index: -10;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -85px;
+        margin: auto;
+        width: 130px;
+        transform: rotate(270deg) translateX(0px);
+
+        @media (min-width: 1023px) {
+            width: 160px;
+            left: 5px;
+            right: initial;
+            bottom: -110px;
+        }
+
+        animation: {
+            name: scrolling;
+            duration: 3s;
+            iteration-count: infinite;
+            direction: alternate;
+            timing-function: ease-in-out;
+        }
+    }
+
+    &--dev-picture {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    &--arrow-two {
+        position: absolute;
+        top: 75px;
+        right: 50px;
+        width: 70px;
+        filter: opacity(.2);
+        transform: rotate(20deg);
+
+        @media (min-width: 1023px) {
+            width: 110px;
+            top: 95px;
+        }
+    }
+
+    &--about-bg {
+        position: relative;
+        z-index: -15;
+        transform: scale(1.8);
+        filter: opacity(0.1);
+    }
+}
+
+
+@keyframes scrolling {
+    0% {
+        transform: rotate(270deg) translateX(0px);
+    }
+    100% {
+        transform: rotate(270deg) translateX(-15px);
+    }
+}

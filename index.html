@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Pérez 🤟</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Rubik:wght@300;400;500&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="burger-pos">
+        <div class="burger-cont">
+          <div class="wrapper">
+            <input id="btnToggle" type="checkbox" class="btn btn--burger" />
+            <span class="bun">
+              <span class="burger"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <nav id="headerNav" class="header-nav">
+        <ul class="navbar">
+          <li class="navbar__item">
+            <a class="link link--nav" href="#projects">
+              <span class="navbar__number"> 01. </span>
+              <span class="navbar__title"> works </span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a class="link link--nav" href="#about">
+              <span class="navbar__number"> 02. </span>
+              <span class="navbar__title"> about </span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a class="link link--nav" href="#contact">
+              <span class="navbar__number"> 03. </span>
+              <span class="navbar__title"> contact </span>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="link main-link">Resume</a>
+      </nav>
+    </header>
+
+    <main id="main" class="main">
+      <section id="home" class="home">
+        <div class="home-container">
+          <div class="home__introduce">
+            <div class="home-introduce-container">
+              
+                <p class="greeting-hello home-slide-in-blurred">Hello, I'm</p>
+                <h1 class="greeting-name home-slide-in-blurred">Alexander Pérez.</h1>
+
+                <div class="home-introduce__text-box">
+                  <p class="text text--principal home-slide-in-blurred">
+                    I am a <span class="underline underline--yellow">Frontend Developer</span>
+                    with a deep
+                    passion for creating innovate apps that
+                  <b class="highlight highlight--yellow">contribute to enhancing the user experience.</b> 
+                </p>
+                <img
+                src="/src/assets/icons/arrow-scroll.svg"
+                alt="arrow-pointing-down"
+                class="img img--arrow-pointing-down"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="home__profile">
+            <div class="home-picture-container home-slide-right-blurred">
+                  <div class="gradient gradient--dev">
+                    <span id="msg">I love JS! 💛</span>
+
+                     <!-- <div id="msg" class="words-box">
+                      <ul class="words">
+                        <li class="words__item"><span class="word">I love JS! 💛</span></li>
+                        <li class="words__item"><span class="word">Frontend is cool 🤩</span></li>
+                        <li class="words__item"><span class="word">I'm a Freelancer 👨🏻‍💻</span></li>
+                        <li class="words__item"><span class="word">Learning every day 💪</span></li>
+                        <li class="words__item"><span class="word">I'm from Venezuela 🇻🇪</span></li>
+                      </ul>
+                    </div>
+                     -->
+                       <img
+                      src="/src/assets/icons/arrow-two.svg"
+                      alt="arrow pointing top"
+                      class="img img--arrow-two"
+                      />
+                  </div>
+                  <img
+                  src="/src/assets/imgs/dev-pic.png"
+                  alt="alexander-perez-picture"
+                  class="img img--dev-picture"
+                  />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="projects-container">
+          <h1 class="title title--principal">Crafted with love.</h1>
+
+          <div class="cards-container">
+            
+            <!-- <div class="row-type-one"> -->
+              <div class="card">
+                <a href="https://th3alexdev.github.io/todoapp/" target="_blank" class="card-link">
+                  <div class="card-info card-info--contrast">
+                    <div class="card-info__title">
+                      <h2>To Do App</h2>
+                      <img class="icon icon--card" src="/src/assets/icons/north-east-gray.svg" class="icon icon--card" alt="icon">
+                    </div>
+                    <ul class="card-info__description">
+                      <p>JavaScript practice using localStorage +</p>
+                    </ul>
+                  </div>
+                  <img
+                    src="/src/assets/imgs/projects/todoapp2.png"
+                    alt="To Do List App"
+                    class="card__image"
+                  />
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="https://th3alexdev.github.io/simonsays/" target="_blank" class="card-link">
+                  <div class="card-info">
+                    <div class="card-info__title">
+                      <h2>Simon Says</h2>
+                      <img class="icon icon--card" src="/src/assets/icons/north-east-white.svg" class="icon icon--card" alt="icon">
+                    </div>
+                    <ul class="card-info__description">
+                      <p>Game built with JavaScript functions
+                      </p>
+                    </ul>
+                  </div>
+                  <img
+                    src="/src/assets/imgs/projects/simonsays.png"
+                    alt="To Do List App"
+                    class="card__image"
+                  />
+                </a>
+              </div>
+            <!-- </div> -->
+
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about hidden">
+        <div class="about-container">
+          <img
+            src="/src/assets/imgs/dev-memoji.png"
+            alt="memoji of alexander"
+            class="img about__memoji"
+          />
+          <h2 class="title title--about">About Me.</h2>
+          <p class="text text--secondary">
+            Hello! My name is Alexander. I am 20 years old Venezuelan with a huge passion for programming.
+            I love learning new things every day and enjoy creating  proyects that allow me to use my skills to do
+            something meaningful.
+          </p>
+          <p class="text text--secondary">
+            I am currently studying the third semester of Computer Science, 
+            at the same time I am a <a href="https://platzi.com/p/alexanderfranciscog/" class="external-link" target="_blank">Platzi student
+              <img class="icon icon--link" src="/src/assets/icons/north-east-blue.svg" alt="icon">
+            </a> in order to deepen and 
+            strengthen my knowledge in JavaScript and React.
+          </p>
+          <div class="about__skills">
+            <p class="text text--secondary">
+              The tecnlogies I've been working recently:
+            </p>
+            <ul class="skills">
+              <li class="skills__item">
+                  JavaScript (E6+)
+              </li>
+              <li class="skills__item">
+                  TypeScript
+              </li>
+              <li class="skills__item">
+                  React
+              </li>
+              <li class="skills__item">
+                  SASS
+              </li>
+              <li class="skills__item">
+                  GIT
+              </li>
+              <li class="skills__item">
+                  HTML
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <h2 class="title title--contact">Get In Touch.</h2>
+          <p class="text contact__text">
+            I am always open to new opportunities that allow me to grow
+            professionally and contributre my knowledge to intereesting
+            projects. Don't hesitate to reach out.
+          </p>
+          <a
+            href="mailto:dev.alexanderperez@protonmail.com"
+            class="link main-link"
+            >Say hello!</a
+          >
+        </div>
+        <span class="contact__build-info">Designed and built by Alexander Pérez</span>
+      </section>
+
+      <div class="sidebars-container">
+        <aside class="sidebar sidebar--socials social-media">
+            <div class="social-media-container">
+                <ul class="social-media-list ">
+                    <li class="socials-list__i">
+                        <a href="https://github.com/th3alexdev" class="link" target="_blank">
+                            <span class="sidebar-icon sidebar-icon--github"></span>
+                        </a>
+                    </li>
+                    <li class="socials-list__i">
+                        <a href="https://twitter.com/th3alexdev" class="link" target="_blank">
+                          <span class="sidebar-icon sidebar-icon--twitter"></span>
+                        </a>
+                    </li>
+                    <li class="socials-list__i">
+                        <a href="https://www.linkedin.com/in/alexander-p%C3%A9rez-graterol-b60b26265/" class="link" target="_blank">
+                          <span class="sidebar-icon sidebar-icon--linkedin"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <aside class="sidebar sidebar--mail sidebar-contact">
+            <div class="sidebar-contact-container">
+                <p class="text sidebar-contact__text">
+                    <a href="mailto:dev.alexanderperez@protonmail.com" class="link mail-link">dev.alexanderperez@protonmail.com</a>
+                </p>
+            </div>
+        </aside>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+@use "../utils/variables" as v;
+@use "../utils/functions" as f;
+@use "../utils/mixins" as *;
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media (max-width: 649px) {
+    flex-direction: column;
+    margin-bottom: 65px;
+    gap: 25px;
+  }
+
+  @media(min-width: 650px) {
+    margin-bottom: 0;
+    height: 100%;
+    flex-direction: row;
+    height: max-content;
+    align-items: center;
+    gap: 55px;
+  }
+
+  &__item {
+    display: block;
+  }
+
+
+  &__number {
+      display: block;
+      line-height: 18px;
+      color: f.getColor('yellow-contrast');
+      font-size: 0.7rem;
+  
+      @media(min-width: 650px) {
+        font-size: 0.7rem;
+      }
+  }
+  
+  &__title {
+    display: block;
+    font: {family: "Space Grotesk", sans-serif;
+    font-size: 1.2rem;}
+    line-height: 20px;
+    color: #c6c8d8;
+    transition: color .3s;
+
+    &:hover {
+      color: f.getColor('link-color-active');
+    }
+  
+    @media(min-width: 650px) {
+      font-size: 1rem;
+    }
+  }
+}

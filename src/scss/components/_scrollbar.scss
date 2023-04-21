@@ -1,0 +1,17 @@
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as *;
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 100vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #72757d;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #141820;
+
+}

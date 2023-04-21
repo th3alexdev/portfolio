@@ -1,0 +1,45 @@
+@use "../../utils/variables" as v;
+@use "../../utils/functions" as f;
+@use "../../utils/mixins" as *;
+
+
+.contact-container {
+    width: 100%;
+    max-width: 910px;
+    margin-bottom: 95px;
+    padding: 55px 25px;
+    display: grid;
+    place-items: center;
+}
+
+.contact {
+    @extend %section;
+    position: relative;
+    
+    @media(min-width: 650px) and (max-width: 1022px) {
+        padding: 110px 50px 20px 50px; 
+    }
+
+    @media(min-width: 1023px) {
+        padding: 190px 50px 190px 50px; 
+    }
+
+    &__text {
+        text-align: center;
+        font-size: .9rem;
+        margin-bottom: 35px;
+        word-wrap: center;
+    }
+
+    &__build-info {
+        position: absolute;
+        left: 50%;
+        bottom: 45px;
+        transform: translateX(-50%);
+
+        font-size: .7rem;
+        font-weight: 300;
+    }
+
+    outline: 1px solid rgb(255, 180, 17);
+}
