@@ -1,0 +1,103 @@
+
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as *;
+
+.wave {
+    &__letter {
+      position: relative;
+      display: inline-block;
+  
+      animation-name: inherit;
+      animation-duration: .9s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      filter: opacity(0);
+  
+      transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+    }
+  
+    @media (min-width:1023px) {
+      font-size: 2rem;
+    }
+  }
+  
+  @keyframes waveTextAnimation {
+    0% {
+      transform: translateY(40px);
+      filter: opacity(0) blur(8px);
+  
+    }
+    50% {
+      transform: translateY(-40px);
+  
+    }
+    100% {
+      transform: translateY(0);
+      filter: opacity(1) blur(0);
+    }
+  }
+
+.text-reveal {
+  position: relative;
+  width: max-content;
+  height: 57px;
+  margin-bottom: 25px;
+
+  overflow: hidden;
+  // outline: 1px solid #fff;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+      display: inline-block;
+      width: 100%;
+      height: max-content;
+      animation-name: swipeUpText;
+      animation-duration: 500ms;
+      animation-delay: 740ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+      transform: translateY(70px);
+  }
+  
+  &::after {
+    z-index: 50;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    
+    width: calc(100% + 25px);
+    height: 57px;
+    display: inline-block;
+    background-color: f.getColor('yellow-contrast');
+    animation-name: swipeBox;
+    animation-duration: 1.1s;
+    animation-timing-function: cubic-bezier(.85,.16,.18,.94);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes swipeBox {
+  0% {
+      transform: translateX(-100%);
+  }
+  60% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+@keyframes swipeUpText {
+  0% {
+      transform: translateY(70px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
