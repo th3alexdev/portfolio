@@ -10,6 +10,7 @@
 
     @media(min-width: 1023px) {
         height: calc(100vh - 115px);
+        max-height: 1000px;
         margin-bottom: 110px;
         padding: 85px 22px 10px 22px; 
     }
@@ -113,10 +114,6 @@
     &-name {
         animation-delay: .45s;
     }
-}
-
-.text--principal {
-    animation-delay: .55s;
 }
 
 .home-picture-container {
