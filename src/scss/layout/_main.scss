@@ -2,8 +2,13 @@
     @use '../utils/functions' as f;
     @use '../utils/mixins' as *;
 
-    .blurred {
-        filter: blur(5px);
+    .hidden {
+        filter: opacity(0);
+    }
+
+    .undercover {
+        opacity: 0;
+        pointer-events: none;
     }
 
     .main {
@@ -19,25 +24,3 @@
         outline: 1px solid #Fff;
     }
 
-    // .hidden {
-
-    //     opacity: 0;
-    //     transform: translateY(15px);
-    //     transition: all .5s;
-    // }
-
-    // .show {
-    //     transform: translateY(0px);
-    //     opacity: 1;
-    // }
-
-    // .hidden-card {
-    //     filter: opacity(0%);
-    //     transform: translateY(15px);
-    //     transition: all .5s;
-    // }
-
-    // .show-card {
-    //     filter: opacity(100%);
-    //     transform: translateY(0px);
-    // }
