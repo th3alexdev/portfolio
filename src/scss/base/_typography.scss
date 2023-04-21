@@ -68,10 +68,12 @@ body {
 .title {
   font-family: 'Space Grotesk', sans-serif;
   color: f.getColor('title-color-primary');
+  filter: opacity(0);
 
   &--principal {
     font-size: 2rem;
-  //   display: block;
+
+    //   display: block;
   //   position: relative;
   //   width: max-content;
   //   height: 57px;
@@ -84,18 +86,15 @@ body {
   }
   
   &--about {
-    margin-bottom: 25px;
-    text-align: right;
     color: f.getColor('title-color-secondary');
 
     @media (min-width: 560px) {
       font-size: 2rem;
     }
   }
+  
   &--contact {
     color: f.getColor('title-color-primary');
-    text-align: center;
-    margin-bottom: 95px;
   }
 }
 
@@ -122,4 +121,9 @@ body {
     font-size: .89rem;  
     color: #5e6b82;
   }
+}
+
+/* animations */
+.text--principal {
+  animation-delay: .55s;
 }
