@@ -42,7 +42,6 @@
   position: relative;
   width: max-content;
   height: 57px;
-  margin-bottom: 25px;
 
   overflow: hidden;
   // outline: 1px solid #fff;
@@ -54,7 +53,7 @@
   &__title {
       display: inline-block;
       width: 100%;
-      height: max-content;
+      height: 57px;
       animation-name: swipeUpText;
       animation-duration: 500ms;
       animation-delay: 740ms;
@@ -96,9 +95,11 @@
 @keyframes swipeUpText {
   0% {
       transform: translateY(70px);
+      filter: opacity(0);
   }
   100% {
       transform: translateY(0px);
+      filter: opacity(1);
   }
 }
 
@@ -163,3 +164,64 @@
       opacity: 1;
   }
 }
+
+.fade-in-blurred {
+  animation-name: fade-in-blurred;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-blurred {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .4;
+  }
+}
+
+.fade-out-blurred {
+  animation-name: fade-out-blurred;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out-blurred {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+// .scale-up-bounce-blurred {
+//   animation-name: fade-in-blurred;
+//   animation-duration: .6s;
+//   animation-fill-mode: forwards;
+// }
+
+// @keyframes fade-in-blurred {
+//   0% {
+//     transform: scale(0.1) translate(-50%, -50%);
+//     opacity: 0;
+
+//   }
+
+//   50% {
+//     transform: scale(1.05) translate(-50%, -50%);
+//     opacity: 0.7;
+
+//   }
+
+//   75% {
+//     transform: scale(0.95) translate(-50%, -50%);
+//   }
+//   100% {
+//     transform: scale(1) translate(-50%, -50%);
+//     opacity: 1;
+
+//   }
+// }
+
