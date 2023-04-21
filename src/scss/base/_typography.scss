@@ -65,20 +65,22 @@ body {
     }
 }
 
-
-
-
 .title {
   font-family: 'Space Grotesk', sans-serif;
+  color: f.getColor('title-color-primary');
 
   &--principal {
-    width: 100%;
-    margin-bottom: 25px;
-    color: f.getColor('title-color-primary');
+    font-size: 2rem;
+  //   display: block;
+  //   position: relative;
+  //   width: max-content;
+  //   height: 57px;
+  //   outline: 1px solid #fff;
+  //   margin-bottom: 25px;
 
-    @media (min-width:1023px) {
-      font-size: 2rem;
-    }
+  //   // @media (min-width:1023px) {
+  //   //   font-size: 2rem;
+  //   // }
   }
   
   &--about {
@@ -120,14 +122,4 @@ body {
     font-size: .89rem;  
     color: #5e6b82;
   }
-
-  // &--link {
-  //   font-size: .9rem;
-  //   color: #5e6b82;
-  // }
-
-
-
-
 }
-
