@@ -108,9 +108,10 @@
 
           <!-- <h1 id="title" class="title title--principal special-animation">Crafted with love.</h1> 
           -->
-          
-          <div class="title-box">
-            <h1 id="title" class="title title--principal text-reveal__title">Crafted with love.</h1> 
+          <div class="section-title">
+            <div class="title-box">
+              <h1 id="projectsTitle" class="title title--principal">Crafted with love.</h1> 
+            </div>
           </div>
 
           <div class="cards-container">
@@ -158,15 +159,34 @@
           </div>
         </div>
       </section>
+      
+      <section id="about" class="about">
+        <div id="aboutBg" class="about-background hidden">
+          <div class="about-background__shadow"></div>
+          <img 
+            src="/src/assets/svg/topography.svg" 
+            alt="about section background"
+            class="about-background__image"
+            loading="lazy"
+          />
+        </div>
 
-      <section id="about" class="about hidden">
-        <div class="about-container">
+        <div class="about-container background-active">
           <img
+            id="memoji"
             src="/src/assets/imgs/dev-memoji.png"
             alt="memoji of alexander"
-            class="img about__memoji"
+            class="img about__memoji undercover"
           />
-          <h2 class="title title--about">About Me.</h2>
+
+          <div class="section-title">
+            <div class="title-box">
+              <h1 id="aboutTitle" class="title title--about">About me.</h1> 
+            </div>
+          </div>
+          <!-- <h2 class="title title--about">About Me.</h2> -->
+
+
           <p class="text text--secondary">
             Hello! My name is Alexander. I am 20 years old Venezuelan with a huge passion for programming.
             I love learning new things every day and enjoy creating  proyects that allow me to use my skills to do
@@ -209,7 +229,13 @@
       
       <section id="contact" class="contact">
         <div class="contact-container">
-          <h2 class="title title--contact">Get In Touch.</h2>
+
+          <div class="section-title section-title--contact">
+              <div class="title-box">
+                <h1 id="contactTitle" class="title title--contact">Get in touch.</h1> 
+              </div>
+          </div>
+
           <p class="text contact__text">
             I am always open to new opportunities that allow me to grow
             professionally and contributre my knowledge to intereesting
