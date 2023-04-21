@@ -27,20 +27,20 @@
         <ul class="navbar">
           <li class="navbar__item">
             <a class="link link--nav" href="#projects">
-              <span class="navbar__number"> 01. </span>
-              <span class="navbar__title"> works </span>
+              <span class="navbar__number" data-id="projects"> 01. </span>
+              <span class="navbar__title" data-id="projects"> projects </span>
             </a>
           </li>
           <li class="navbar__item">
             <a class="link link--nav" href="#about">
-              <span class="navbar__number"> 02. </span>
-              <span class="navbar__title"> about </span>
+              <span class="navbar__number" data-id="about"> 02. </span>
+              <span class="navbar__title" data-id="about"> about </span>
             </a>
           </li>
           <li class="navbar__item">
             <a class="link link--nav" href="#contact">
-              <span class="navbar__number"> 03. </span>
-              <span class="navbar__title"> contact </span>
+              <span class="navbar__number" data-id="contact"> 03. </span>
+              <span class="navbar__title" data-id="contact"> contact </span>
             </a>
           </li>
         </ul>
@@ -54,11 +54,11 @@
           <div class="home__introduce">
             <div class="home-introduce-container">
               
-                <p class="greeting-hello home-slide-in-blurred">Hello, I'm</p>
-                <h1 class="greeting-name home-slide-in-blurred">Alexander Pérez.</h1>
+                <p class="greeting-hello slide-in-blurred">Hello, I'm</p>
+                <h1 class="greeting-name slide-in-blurred">Alexander Pérez.</h1>
 
                 <div class="home-introduce__text-box">
-                  <p class="text text--principal home-slide-in-blurred">
+                  <p class="text text--principal slide-in-blurred">
                     I am a <span class="underline underline--yellow">Frontend Developer</span>
                     with a deep
                     passion for creating innovate apps that
@@ -73,7 +73,7 @@
             </div>
           </div>
           <div class="home__profile">
-            <div class="home-picture-container home-slide-right-blurred">
+            <div class="home-picture-container slide-right-blurred">
                   <div class="gradient gradient--dev">
                     <span id="msg">I love JS! 💛</span>
 
@@ -105,12 +105,17 @@
 
       <section id="projects" class="projects">
         <div class="projects-container">
-          <h1 class="title title--principal">Crafted with love.</h1>
+
+          <!-- <h1 id="title" class="title title--principal special-animation">Crafted with love.</h1> 
+          -->
+          
+          <div class="title-box">
+            <h1 id="title" class="title title--principal text-reveal__title">Crafted with love.</h1> 
+          </div>
 
           <div class="cards-container">
-            
             <!-- <div class="row-type-one"> -->
-              <div class="card">
+              <div class="card undercover">
                 <a href="https://th3alexdev.github.io/todoapp/" target="_blank" class="card-link">
                   <div class="card-info card-info--contrast">
                     <div class="card-info__title">
@@ -129,7 +134,7 @@
                 </a>
               </div>
 
-              <div class="card">
+              <div class="card undercover">
                 <a href="https://th3alexdev.github.io/simonsays/" target="_blank" class="card-link">
                   <div class="card-info">
                     <div class="card-info__title">
