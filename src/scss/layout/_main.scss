@@ -2,25 +2,28 @@
     @use '../utils/functions' as f;
     @use '../utils/mixins' as *;
 
-    .hidden {
-        filter: opacity(0);
+    .show {
+        opacity: 1;
     }
 
-    .undercover {
+    .hidden {
         opacity: 0;
-        pointer-events: none;
     }
 
     .main {
         position: relative;
         max-width: 1150px;
         transition: filter .3s ease-in-out;
-        padding-top: 1px;
+        padding-top: 85px;
 
         @media(min-width: 1023px) {
             width: 80%;
             margin: 0 auto;
         }
-        outline: 1px solid #Fff;
+
+        @media(min-width:1024px) {
+            padding-top: 110px;
+        }
+        // outline: 1px solid #Fff;
     }
 
