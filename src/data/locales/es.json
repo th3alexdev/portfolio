@@ -16,22 +16,18 @@
     { 
         "greeting": "Hola, soy",
         "description": "<span class='underline underline--yellow'>Desarrollador Frontend</span> con experiencia en JavaScript y React con pasión por crear aplicaciones innovadoras y fáciles de usar que mejoren la experiencia del usuario.",
-        "get-in-touch": "¡Contáctame!"
+        "get-in-touch": "¡Contáctame!",
+        "msg": "¡JS es cool! 💛"
     },
 
     "projects": 
     {
         "title": "Proyectos creados con amor.",
-        "cards": [
-            {
-                "title": "Lista de Tareas",
-                "description": "Practica de JavaScript usando localStorage +"
-            },
-            {
-                "title": "Simon Dice",
-                "description": "Juego construido con JavaScript functions"
-            }
-        ]
+        "first-card-title": "Lista de Tareas",
+        "first-card-description": "Practica de JavaScript usando localStorage +",
+        
+        "second-card-title": "Simon Dice",
+        "second-card-description": "Juego construido con funciones de JavaScript"
     },
 
     "about": 

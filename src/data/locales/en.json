@@ -16,22 +16,18 @@
     { 
         "greeting": "Hello, I'm",
         "description": "I am a <span class='underline underline--yellow'>Frontend Developer</span> with experience in JavaScript and React with a passion for creating innovative and easy-to-use applications that improve the user experience.",
-        "get-in-touch": "Let's get in touch!"
+        "get-in-touch": "Let's get in touch!",
+        "msg": "I love JS! 💛"
     },
 
     "projects": 
     {
         "title": "Crafted with love.",
-        "cards": [
-            {
-                "title": "To Do App",
-                "description": "JavaScript practice using localStorage +"
-            },
-            {
-                "title": "Simon Says",
-                "description": "Game built with JavaScript functions"
-            }
-        ]
+        "first-card-title": "To Do App",
+        "first-card-description": "JavaScript practice using localStorage +",
+        
+        "second-card-title": "Simon Says",
+        "second-card-description": "Game built with JavaScript functions"
     },
 
     "about": 
