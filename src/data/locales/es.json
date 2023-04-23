@@ -1,0 +1,55 @@
+{
+    "settings": 
+    {
+        "title": "Cambiar idioma"
+    },
+
+    "header": 
+    {
+        "first": "proyectos",
+        "second": "sobre mí",
+        "third": "contacto",
+        "button": "Currículum"
+    },
+
+    "home": 
+    { 
+        "greeting": "Hola, soy",
+        "description": "<span class='underline underline--yellow'>Desarrollador Frontend</span> con experiencia en JavaScript y React con pasión por crear aplicaciones innovadoras y fáciles de usar que mejoren la experiencia del usuario.",
+        "get-in-touch": "¡Contáctame!"
+    },
+
+    "projects": 
+    {
+        "title": "Proyectos creados con amor.",
+        "cards": [
+            {
+                "title": "Lista de Tareas",
+                "description": "Practica de JavaScript usando localStorage +"
+            },
+            {
+                "title": "Simon Dice",
+                "description": "Juego construido con JavaScript functions"
+            }
+        ]
+    },
+
+    "about": 
+    {
+        "title": "Sobre mí.",
+        "presentation": "¡Hola! Mi nombre es Alexander y soy de Venezuela. Tengo 20 años y soy desarrollador frontend con una gran pasión por la programación. Me encanta aprender cosas nuevas todos los días y disfruto creando proyectos que me permitan usar mis habilidades para hacer algo significativo.",
+        "currently": "Actualmente estoy estudiando Ciencias de la Computación y tomando constantemente cursos en <a href='https://platzi.com/p/alexanderfranciscog/' class='external-link' target='_blank'>Platzi<img class='icon icon--link' src='/src/assets/icons/north-east-blue.svg' alt='icon'></a> para mejorar mis habilidades en JavaScript, React y otras tecnologías web. Busco oportunidades para seguir aprendiendo y creciendo en el campo del desarrollo web.",
+        "technologies": "Las tecnologías en las que he estado trabajando recientemente"
+    },
+
+    "contact":
+    {
+        "title": "Contáctame.",
+
+        "opportunities": "Siempre estoy abierto a nuevas oportunidades que me permitan crecer profesionalmente y aportar mis conocimientos a proyectos interesantes. Si está buscando un desarrollador hábil y apasionado para trabajar en su próximo proyecto, no dude en ponerse en contacto.",
+
+        "button": "¡Di hola!",
+        
+        "built": "Diseñado y construido por Alexander Pérez"
+    }
+}
