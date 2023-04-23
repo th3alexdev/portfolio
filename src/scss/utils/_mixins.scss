@@ -17,3 +17,10 @@
     display: grid;
     place-items: center;
 }
+
+@mixin background-with-url($image-url, $hover-image-url) {
+    background-image: url($image-url);
+    &:hover {
+      background-image: url($hover-image-url);
+    }
+}
