@@ -13,3 +13,12 @@
     display: grid;
     place-items: center;
 }
+
+%icon {
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: inline-block;
+    transition: transform .3s ease, background-image .2s;
+}
