@@ -15,7 +15,9 @@
 @forward "layout/Sections/contact";
 
 /* components */
+@forward "components/animations";
 @forward "components/imgs";
+@forward "components/get-in-touch";
 @forward "components/lists";
 @forward "components/links";
 @forward "components/btns";
@@ -25,7 +27,10 @@
 @forward 'components/gradients';
 @forward "components/nav";
 @forward 'components/scrollbar';
+@forward 'components/loader';
 @forward 'components/sidebars';
 @forward 'components/shapes';
+@forward 'components/settings';
 @forward 'components/typerwriter';
+@forward "components/titles";
 @forward 'components/words-swipe';
