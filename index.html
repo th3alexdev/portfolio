@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexander Pérez 🤟</title>
 
+    <!-- fav icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="src/assets/favicons/safari-pinned-tab.svg" color="#313f6a">
+    <meta name="msapplication-TileColor" content="#313f6a">
+    <meta name="theme-color" content="#181e30">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Rubik:wght@300;400;500&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="settings">
+      <button id="switchLang" class="settings-button" data-language="" data-section="settings" data-value="title" data-pressed="">
+        Swith language
+      </button>
+    </div>
+    
+    <!-- <div id="loader" class="loader">
+      <div class="loader-container"></div>
+    </div> -->
+
     <header class="header">
       <div class="burger-pos">
         <div class="burger-cont">
@@ -28,23 +47,23 @@
           <li class="navbar__item">
             <a class="link link--nav" href="#projects">
               <span class="navbar__number" data-id="projects"> 01. </span>
-              <span class="navbar__title" data-id="projects"> projects </span>
+              <span class="navbar__title" data-id="projects" data-section="header" data-value="first"> projects </span>
             </a>
           </li>
           <li class="navbar__item">
             <a class="link link--nav" href="#about">
               <span class="navbar__number" data-id="about"> 02. </span>
-              <span class="navbar__title" data-id="about"> about </span>
+              <span class="navbar__title" data-id="about" data-section="header" data-value="second"> about </span>
             </a>
           </li>
           <li class="navbar__item">
             <a class="link link--nav" href="#contact">
               <span class="navbar__number" data-id="contact"> 03. </span>
-              <span class="navbar__title" data-id="contact"> contact </span>
+              <span class="navbar__title" data-id="contact" data-section="header" data-value="third"> contact </span>
             </a>
           </li>
         </ul>
-        <a href="#" class="link main-link">Resume</a>
+        <a href="#" class="link main-link" data-section="header" data-value="button">Resume</a>
       </nav>
     </header>
 
@@ -54,15 +73,64 @@
           <div class="home__introduce">
             <div class="home-introduce-container">
               
-                <p class="greeting-hello slide-in-blurred">Hello, I'm</p>
-                <h1 class="greeting-name slide-in-blurred">Alexander Pérez.</h1>
+                <p 
+                  class="greeting-hello home-animation hidden"
+                  data-section="home" 
+                  data-value="greeting" 
+
+                  data-animation="slide-in-blurred">
+                  Hello, I'm
+                </p>
+                <h1 
+                  id="homeTitle"
+                  class="greeting-name home-animation hidden"
+
+                  data-animation="slide-in-blurred"
+                >
+                  Alexander Pérez.
+                </h1>
 
                 <div class="home-introduce__text-box">
-                  <p class="text text--principal slide-in-blurred">
+                  <p
+                   class="text text--principal home-animation hidden"
+                   data-section="home"
+                   data-value="description"
+
+                   data-animation="slide-in-blurred"
+                  >
                     I am an experienced <span class="underline underline--yellow">Frontend Developer</span> skilled in JavaScript and React 
                     with a passion for creating innovative and user-friendly
                     apps that enhance the user experience.
                 </p>
+
+                <div class="get-in-touch hidden s">
+                  <p class="get-in-touch__text" data-section="home" data-value="get-in-touch">
+                    Let's get in touch:
+                  </p>
+                  <ul class="get-in-touch-list">
+                    <li class="get-in-touch-list__i undercover">
+                        <a href="https://github.com/th3alexdev" class="link" target="_blank">
+                            <span class="solid-icon icon-medium solid-icon--github"></span>
+                        </a>
+                    </li>
+                    <li class="get-in-touch-list__i undercover">
+                        <a href="https://twitter.com/th3alexdev" class="link" target="_blank">
+                          <span class="solid-icon icon-medium solid-icon--twitter"></span>
+                        </a>
+                    </li>
+                    <li class="get-in-touch-list__i undercover">
+                        <a href="https://www.linkedin.com/in/alexander-p%C3%A9rez-graterol-b60b26265/" class="link" target="_blank">
+                          <span class="solid-icon icon-medium solid-icon--linkedin"></span>
+                        </a>
+                    </li>
+                    <li class="get-in-touch-list__i undercover">
+                      <a href="mailto:dev.alexanderperez@protonmail.com" class="link" target="_blank">
+                        <span class="solid-icon icon-medium solid-icon--mail"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
                 <img
                 src="/src/assets/icons/arrow-scroll.svg"
                 alt="arrow-pointing-down"
@@ -72,7 +140,10 @@
             </div>
           </div>
           <div class="home__profile">
-            <div class="home-picture-container slide-right-blurred">
+            <div 
+              class="home-picture-container home-animation hidden"
+              data-animation="slide-right-blurred"  
+            >
                   <div class="gradient gradient--dev">
                     <span id="msg">I love JS! 💛</span>
 
@@ -96,6 +167,7 @@
                   src="/src/assets/imgs/dev-pic.png"
                   alt="alexander-perez-picture"
                   class="img img--dev-picture"
+                  
                   />
             </div>
           </div>
@@ -109,13 +181,16 @@
           -->
           <div class="section-title">
             <div class="title-box">
-              <h1 id="projectsTitle" class="title title--principal">Crafted with love.</h1> 
+              <h1 id="projectsTitle" class="title title--principal" data-section="projects" data-value="title">Crafted with love.</h1> 
             </div>
           </div>
 
           <div class="cards-container">
             <!-- <div class="row-type-one"> -->
-              <div class="card undercover">
+              <div 
+                class="card hidden"
+                data-animation="slide-down-blurred"
+              >
                 <a href="https://th3alexdev.github.io/todoapp/" target="_blank" class="card-link">
                   <div class="card-info card-info--contrast">
                     <div class="card-info__title">
@@ -134,7 +209,10 @@
                 </a>
               </div>
 
-              <div class="card undercover">
+              <div 
+                class="card hidden"
+                data-animation="slide-down-blurred"
+              >
                 <a href="https://th3alexdev.github.io/simonsays/" target="_blank" class="card-link">
                   <div class="card-info">
                     <div class="card-info__title">
@@ -160,7 +238,10 @@
       </section>
       
       <section id="about" class="about">
-        <div id="aboutBg" class="about-background hidden">
+        <div
+         id="aboutBg"
+         class="about-background hidden"
+        >
           <div class="about-background__shadow"></div>
           <img 
             src="/src/assets/svg/topography.svg" 
@@ -175,29 +256,29 @@
             id="memoji"
             src="/src/assets/imgs/dev-memoji.png"
             alt="memoji of alexander"
-            class="img about__memoji undercover"
+            class="img about__memoji hidden"
           />
 
           <div class="section-title">
             <div class="title-box">
-              <h1 id="aboutTitle" class="title title--about">About me.</h1> 
+              <h1 id="aboutTitle" class="title title--about" data-section="about" data-value="title">About me.</h1> 
             </div>
           </div>
           <!-- <h2 class="title title--about">About Me.</h2> -->
 
 
-          <p class="text text--secondary">
+          <p class="text text--secondary" data-section="about" data-value="presentation">
             Hello! My name is Alexander. I am 20 years old Venezuelan with a huge passion for programming.
             I love learning new things every day and enjoy creating  proyects that allow me to use my skills to do
             something meaningful.
           </p>
-          <p class="text text--secondary">
+          <p class="text text--secondary" data-section="about" data-value="currently">
             Currently, I'm studying Computer Science and taking constantly courses on <a href="https://platzi.com/p/alexanderfranciscog/" class="external-link" target="_blank">Platzi
               <img class="icon icon--link" src="/src/assets/icons/north-east-blue.svg" alt="icon">
             </a> to improve my skills in JavaScript, React and other web technologies. I'm looking for opportunities to continue learning and growing in the field of web development.
           </p>
           <div class="about__skills">
-            <p class="text text--secondary">
+            <p class="text text--secondary" data-section="about" data-value="technologies">
               The tecnlogies I've been working recently:
             </p>
             <ul class="skills">
@@ -229,11 +310,11 @@
 
           <div class="section-title section-title--contact">
               <div class="title-box">
-                <h1 id="contactTitle" class="title title--contact">Get in touch.</h1> 
+                <h1 id="contactTitle" class="title title--contact" data-section="contact" data-value="title">Get in touch.</h1> 
               </div>
           </div>
 
-          <p class="text contact__text">
+          <p class="text contact__text" data-section="contact" data-value="opportunities">
             I am always open to new opportunities that allow 
             me to grow professionally and contribute my 
             knowledge to interesting projects. If you're looking for a 
@@ -243,10 +324,12 @@
           <a
             href="mailto:dev.alexanderperez@protonmail.com"
             class="link main-link"
+            data-section="contact"
+            data-value="button"
             >Say hello!</a
           >
         </div>
-        <span class="contact__build-info">Designed and built by Alexander Pérez</span>
+        <span class="contact__build-info" data-section="contact" data-value="built">Designed and built by Alexander Pérez</span>
       </section>
 
       <div class="sidebars-container">
@@ -255,17 +338,17 @@
                 <ul class="social-media-list ">
                     <li class="socials-list__i">
                         <a href="https://github.com/th3alexdev" class="link" target="_blank">
-                            <span class="sidebar-icon sidebar-icon--github"></span>
+                            <span class="regular-icon icon-small regular-icon--github"></span>
                         </a>
                     </li>
                     <li class="socials-list__i">
                         <a href="https://twitter.com/th3alexdev" class="link" target="_blank">
-                          <span class="sidebar-icon sidebar-icon--twitter"></span>
+                          <span class="regular-icon icon-small regular-icon--twitter"></span>
                         </a>
                     </li>
                     <li class="socials-list__i">
                         <a href="https://www.linkedin.com/in/alexander-p%C3%A9rez-graterol-b60b26265/" class="link" target="_blank">
-                          <span class="sidebar-icon sidebar-icon--linkedin"></span>
+                          <span class="regular-icon icon-small regular-icon--linkedin"></span>
                         </a>
                     </li>
                 </ul>
@@ -280,6 +363,7 @@
             </div>
         </aside>
       </div>
+
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
