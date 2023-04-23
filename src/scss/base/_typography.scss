@@ -72,18 +72,16 @@ body {
 
   &--principal {
     font-size: 2rem;
-
-    //   display: block;
-  //   position: relative;
-  //   width: max-content;
-  //   height: 57px;
-  //   // outline: 1px solid #fff;
-
-  //   // @media (min-width:1023px) {
-  //   //   font-size: 2rem;
-  //   // }
   }
   
+  &--projects {
+    font-size: 1.35rem;
+
+    @media(min-width:660px) {
+      font-size: 2rem;
+    }
+  }
+
   &--about {
     color: f.getColor('title-color-secondary');
 
