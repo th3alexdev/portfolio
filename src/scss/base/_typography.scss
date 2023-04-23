@@ -33,7 +33,7 @@ body {
     } 
 
     &-name {
-      outline: 1px solid rgb(0, 255, 0);
+      // outline: 1px solid rgb(0, 255, 0);
 
       margin-bottom: 30px;
       line-height: 50px;
@@ -77,8 +77,7 @@ body {
   //   position: relative;
   //   width: max-content;
   //   height: 57px;
-  //   outline: 1px solid #fff;
-  //   margin-bottom: 25px;
+  //   // outline: 1px solid #fff;
 
   //   // @media (min-width:1023px) {
   //   //   font-size: 2rem;
@@ -106,10 +105,12 @@ body {
   }
 
   &--principal {
+    margin-bottom: 25px;
     font-size: .9rem;
     line-height: 30px;
     color: rgba($color: #fff, $alpha: 0.8);
     font-weight: 300;
+
   }
 
   &--secondary {
