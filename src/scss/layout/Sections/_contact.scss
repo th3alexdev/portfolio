@@ -34,12 +34,13 @@
     &__build-info {
         position: absolute;
         left: 50%;
-        bottom: 45px;
+        bottom: 150px;
         transform: translateX(-50%);
+        text-align: center;
 
         font-size: .7rem;
         font-weight: 300;
     }
 
-    outline: 1px solid rgb(255, 180, 17);
+    // // outline: 1px solid rgb(255, 180, 17);
 }
