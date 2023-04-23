@@ -12,6 +12,8 @@ export const setLoader = (again) => { // Define the SetLoader function that will
     const loaderHTML = document.createElement("div"); 
     loaderHTML.id = "loader";
     loaderHTML.className = "loader";
+    loaderHTML.setAttribute("role", "status");
+    loaderHTML.setAttribute('aria-label', "Loading...");
 
     // If the function is being called a second time, the animation it should do is assigned
     if(again) { loaderHTML.className += " fade-in-blurred-secondary" }
