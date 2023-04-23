@@ -9,16 +9,17 @@
 
 .projects {
     @extend %section;
-    margin-bottom: 110px;
-    outline: 1px solid #0f0;
+    margin-bottom: 60px;
+    // outline: 1px solid #0f0;
 
     width: 100%;
 
     @media(min-width: 650px) and (max-width: 1022px) {
-        padding: 110px 50px 20px 50px; 
+        padding: 110px 50px 15px 50px; 
     }
 
     @media (min-width: 1023px) {
+        padding-top: 125px;
         margin-bottom: 130px;
     }
 }
