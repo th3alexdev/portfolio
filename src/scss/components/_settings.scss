@@ -2,3 +2,90 @@
 @use '../utils/functions' as f;
 @use '../utils/mixins' as *;
 @use '../utils/extends' as *;
+
+.settings {
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+
+    width: 350px;
+    height: 140px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) translateY(70px);
+    transition: transform .3s;
+
+    animation-name: settings;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease;
+    
+    &:hover {
+        transform: translateX(-50%) translateY(0px);
+    }
+
+    &-button {
+        cursor: pointer;
+        width: 250px;
+        height: 55px;
+        padding: 10px 18px;
+
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        gap: 8px;
+
+        color: f.getColor('title-color-primary');
+        background-color: #0f131f; //#0e111b
+        
+
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 -2px 12px 0 rgb(0 0 0 / 20%);
+
+        font-family: "Space Grotesk", sans-serif;
+        font-size: .8rem;
+
+        transition: color .3s, transform .3s;
+    }
+}
+
+@keyframes settings {
+    0% {
+        transform: translateX(-50%) translateY(0px);
+        color: f.getColor('title-color-primary');
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(0px);
+        color: f.getColor('title-color-primary');
+    }
+
+    75% {
+        transform: translateX(-50%) translateY(10px);
+        color: f.getColor('title-color-primary');
+    }
+
+
+    75% {
+        transform: translateX(-50%) translateY(0px);
+        color: f.getColor('title-color-primary');
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(70px);
+        color: transparent;
+    }
+}
+
+
+.settings-active {
+    color: transparent;
+}
+
+.settings:hover > .settings-active {
+    color: f.getColor('title-color-primary');
+}
