@@ -1,20 +1,11 @@
-// @use '../utils/variables' as v;
-// @use '../utils/functions' as f;
-// @use '../utils/mixins' as *;
-
-/* base */
 @forward "base/base";
 @forward "base/typography";
-
-/* layout */
 @forward "layout/header";
 @forward "layout/main";
 @forward "layout/Sections/home";
 @forward "layout/Sections/projects";
 @forward "layout/Sections/about";
 @forward "layout/Sections/contact";
-
-/* components */
 @forward "components/animations";
 @forward "components/imgs";
 @forward "components/get-in-touch";
@@ -31,6 +22,4 @@
 @forward 'components/sidebars';
 @forward 'components/shapes';
 @forward 'components/settings';
-@forward 'components/typerwriter';
 @forward "components/titles";
-@forward 'components/words-swipe';
