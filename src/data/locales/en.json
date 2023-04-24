@@ -1,4 +1,14 @@
 {
+    "alt": 
+    {
+        "alt-arrow-pointing-down": "Arrow pointing down indicating you must scroll down to see more content.",
+        "alt-developer-presentation": "Photo of presentation photo of the frontend developer Alexander Perez",
+        "alt-icon-north-east": "Arrow icon pointing up and to the right in gray color, used as a link indicator on a card.",
+        "alt-to-do-app": "Mockup of two smartphones with the application 'To Do App' on the screen and with a white background. The app displays a list of tasks on both phones, with some tasks marked as done and others still to be done",
+        "alt-simon-says": "Mockup of the 'Simon Says' project with a blue background showing two screenshots of the game in different stages. The first screenshot shows the game's main or home screen, while the second screenshot shows the game itself, with a current score of 7 and a previous high score of 4.",
+        "alt-about-bg": "Image of a topographic map used as decoration in the About section. The image has a transparent background and shows a raised representation of mountains and valleys in shades of blue, creating an attractive visual effect.",
+        "alt-memoji": "Image of developer Alexander Perez's memoji, showing a character with a smile and thumbs up. The character has fluffy black hair, brown eyes, and brown skin, and stands against a transparent background. The memoji is a digital representation of the developer, used as a profile image or to identify the developer in the About section."
+    },
     "settings": 
     {
         "title": "Switch language"
