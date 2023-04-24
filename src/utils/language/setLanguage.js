@@ -3,7 +3,7 @@ import { langRequest } from "./langRequest" // Imports the function with the pro
 export const setLanguage = async (lang) => { // Exports a function called 'setLanguage' that takes a 'lang'
                                              // parameter and returns a promise
 
-    const textsToChange = document.querySelectorAll("[data-section]") // Selects all the elements with a data-section attribute
+    const textsToChange = document.querySelectorAll("[data-section][data-value]") // Selects all the elements with a data-section attribute
                                                                       // to change their textContext
 
     let toChange // Defines the opposite language to the
@@ -25,16 +25,22 @@ export const setLanguage = async (lang) => { // Exports a function called 'setLa
     
     for (const textToChange of textsToChange) { // Loop through all elements with a 'data-section' attribute 
                                                 // and change their text content based on the 'data' object
-
         const section = textToChange.dataset.section
         const value = textToChange.dataset.value;
-    
-        textToChange.innerHTML = data[section][value]
+
+        if(section === "alt") {
+            textToChange.setAttribute("alt", data[section][value])
+        } else {
+            textToChange.innerHTML = data[section][value]
+        }
     }    
 }
 
 const switchLangButton = document.getElementById('switchLang') // Get the reference of the switchLangButton
 let userLanguage
+
+const htmlElement = document.querySelector('html');
+
 
 let getData = localStorage.getItem("language"); // Check if there is language data stored in the browser's localStorage
 
@@ -43,13 +49,17 @@ if(getData) { // If there is language data stored, parse it and set the user's l
 
     if(data.isSetted) {
         userLanguage = data.lang
-    
+        htmlElement.setAttribute('lang', userLanguage)
+        
     }
 
 } else { // If there is no language data stored
 
+
     userLanguage = navigator.language // Get the language of the user browser
     userLanguage = userLanguage.substring(0,2)
+
+    htmlElement.setAttribute('lang', userLanguage)
 }
 
 // Call the 'setLanguage' function with the user's language as the parameter to set the text content of the page

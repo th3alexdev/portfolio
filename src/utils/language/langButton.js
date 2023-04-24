@@ -44,6 +44,9 @@ switchLangButton.addEventListener('click', (e) => { // Adding click event listen
         data.lang = lang
         e.target.dataset.language = lang
 
+        const htmlElement = document.querySelector('html');
+        htmlElement.setAttribute('lang', lang)
+
     
         setTimeout(() => { 
             setLoader(true); // After 1000 ms it calls the setLoader function and specifies that it is being called more than once
@@ -60,6 +63,7 @@ switchLangButton.addEventListener('click', (e) => { // Adding click event listen
 
         
         data.isSetted = true // the isSetted property on the data object is set to true
+
 
         setTimeout(() => {
             switchLangButton.dataset.pressed = "" // remove the value inside data-pressed
