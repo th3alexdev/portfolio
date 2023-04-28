@@ -8,12 +8,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "build-sass": "sass src/scss/styles.scss src/css/styles.css --no-source-map",
-    "prefix-css": "postcss src/css/styles.css -o docs/css/styles.min.css --no-map"
+    "prefix-css": "postcss src/css/styles.css -o src/docs/css/styles.min.css --no-map"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",
+    "rollup-plugin-copy": "^3.4.0",
     "sass": "^1.62.0",
     "vite": "^4.1.0"
   }
