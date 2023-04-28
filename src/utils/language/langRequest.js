@@ -5,8 +5,9 @@ export const langRequest = async (lang) => { // Defines the function with the re
     try {
 
         // Sending a GET request to a JSON file located in a specific directory based on the 'lang' parameter
-        const response = await fetch(`../../src/data/locales/${lang}.json`)
-
+        // const response = await fetch(`../data/locales/${lang}.json`)
+        const response = await fetch(`/data/locales/${lang}.json`)
+        
         // If the response is not OK, throw an error            
         if(!response.ok) {
             throw new Error("There was an error!", response.status)

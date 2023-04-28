@@ -45,18 +45,18 @@
     }
 
     &--github {
-        @include background-with-url("../assets/icons/regular/github.svg", 
-                                     "../assets/icons/regular/active/github-active.svg");
+        @include background-with-url("../../assets/icons/regular/github.svg", 
+                                     "../../assets/icons/regular/active/github-active.svg");
     }
 
     &--twitter {
-        @include background-with-url("../assets/icons/regular/twitter.svg",
-                                     "../assets/icons/regular/active/twitter-active.svg");
+        @include background-with-url("../../assets/icons/regular/twitter.svg",
+                                     "../../assets/icons/regular/active/twitter-active.svg");
     }
 
     &--linkedin {
-        @include background-with-url("../assets/icons/regular/linkedin.svg", 
-                                     "../assets/icons/regular/active/linkedin-active.svg");
+        @include background-with-url("../../assets/icons/regular/linkedin.svg", 
+                                     "../../assets/icons/regular/active/linkedin-active.svg");
     }
 }
 
@@ -68,22 +68,22 @@
     }
 
     &--github {
-        @include background-with-url("../assets/icons/solid/github.svg", 
-                                     "../assets/icons/solid/active/github-active.svg");
+        @include background-with-url("../../assets/icons/solid/github.svg", 
+                                     "../../assets/icons/solid/active/github-active.svg");
     }
 
     &--twitter {
-        @include background-with-url("../assets/icons/solid/twitter.svg",
-                                     "../assets/icons/solid/active/twitter-active.svg");
+        @include background-with-url("../../assets/icons/solid/twitter.svg",
+                                     "../../assets/icons/solid/active/twitter-active.svg");
     }
 
     &--linkedin {
-        @include background-with-url("../assets/icons/solid/linkedin.svg", 
-                                     "../assets/icons/solid/active/linkedin-active.svg");
+        @include background-with-url("../../assets/icons/solid/linkedin.svg", 
+                                     "../../assets/icons/solid/active/linkedin-active.svg");
     }
 
     &--mail {
-        @include background-with-url("../assets/icons/solid/send-email.svg", 
-                                     "../assets/icons/solid/active/send-email-active.svg");
+        @include background-with-url("../../assets/icons/solid/send-email.svg", 
+                                     "../../assets/icons/solid/active/send-email-active.svg");
     }
 }

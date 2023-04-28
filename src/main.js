@@ -1,4 +1,4 @@
-import '../docs/css/styles.min.css'
+import '././docs/css/styles.min.css'
 
 import "./utils/navbutton"
 
