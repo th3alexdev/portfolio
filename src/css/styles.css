@@ -528,7 +528,7 @@ body {
   left: 5px;
   width: 7px;
   height: 7px;
-  background: url("/src/assets/icons/triangle.svg");
+  background: url("../../../assets/icons/triangle.svg");
   background-size: 150%;
   background-position: center;
   transform: translateY(-50%) rotate(90deg);
@@ -1124,50 +1124,50 @@ body {
   transform: translateY(-5px);
 }
 .regular-icon--github {
-  background-image: url("../assets/icons/regular/github.svg");
+  background-image: url("../../assets/icons/regular/github.svg");
 }
 .regular-icon--github:hover {
-  background-image: url("../assets/icons/regular/active/github-active.svg");
+  background-image: url("../../assets/icons/regular/active/github-active.svg");
 }
 .regular-icon--twitter {
-  background-image: url("../assets/icons/regular/twitter.svg");
+  background-image: url("../../assets/icons/regular/twitter.svg");
 }
 .regular-icon--twitter:hover {
-  background-image: url("../assets/icons/regular/active/twitter-active.svg");
+  background-image: url("../../assets/icons/regular/active/twitter-active.svg");
 }
 .regular-icon--linkedin {
-  background-image: url("../assets/icons/regular/linkedin.svg");
+  background-image: url("../../assets/icons/regular/linkedin.svg");
 }
 .regular-icon--linkedin:hover {
-  background-image: url("../assets/icons/regular/active/linkedin-active.svg");
+  background-image: url("../../assets/icons/regular/active/linkedin-active.svg");
 }
 
 .solid-icon:hover {
   transform: translateY(-5px);
 }
 .solid-icon--github {
-  background-image: url("../assets/icons/solid/github.svg");
+  background-image: url("../../assets/icons/solid/github.svg");
 }
 .solid-icon--github:hover {
-  background-image: url("../assets/icons/solid/active/github-active.svg");
+  background-image: url("../../assets/icons/solid/active/github-active.svg");
 }
 .solid-icon--twitter {
-  background-image: url("../assets/icons/solid/twitter.svg");
+  background-image: url("../../assets/icons/solid/twitter.svg");
 }
 .solid-icon--twitter:hover {
-  background-image: url("../assets/icons/solid/active/twitter-active.svg");
+  background-image: url("../../assets/icons/solid/active/twitter-active.svg");
 }
 .solid-icon--linkedin {
-  background-image: url("../assets/icons/solid/linkedin.svg");
+  background-image: url("../../assets/icons/solid/linkedin.svg");
 }
 .solid-icon--linkedin:hover {
-  background-image: url("../assets/icons/solid/active/linkedin-active.svg");
+  background-image: url("../../assets/icons/solid/active/linkedin-active.svg");
 }
 .solid-icon--mail {
-  background-image: url("../assets/icons/solid/send-email.svg");
+  background-image: url("../../assets/icons/solid/send-email.svg");
 }
 .solid-icon--mail:hover {
-  background-image: url("../assets/icons/solid/active/send-email-active.svg");
+  background-image: url("../../assets/icons/solid/active/send-email-active.svg");
 }
 
 .burger-pos {
