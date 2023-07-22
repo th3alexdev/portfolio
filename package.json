@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 1100",
     "build": "vite build",
     "preview": "vite preview",
-    "build-sass": "sass src/scss/styles.scss src/css/styles.css --no-source-map",
-    "prefix-css": "postcss src/css/styles.css -o src/docs/css/styles.min.css --no-map"
+    "sass": "sass src/scss/styles.scss src/css/styles.css --no-source-map",
+    "postcss": "postcss src/css/styles.css -o src/docs/css/styles.min.css --no-map",
+    "build-sass": "npm run sass && npm run postcss && npm run build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
