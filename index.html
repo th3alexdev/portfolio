@@ -57,13 +57,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="src/assets/favicons/site.webmanifest">
     <link rel="mask-icon" href="src/assets/favicons/safari-pinned-tab.svg" color="#313f6a">
+    <link rel="shortcut icon" href="src/assets/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#313f6a">
+    <meta name="msapplication-config" content="src/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#181e30">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Rubik:wght@300;400;500&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="settings" role="complementary">
@@ -80,7 +77,7 @@
       <div class="burger-pos">
         <div class="burger-cont">
           <div class="wrapper">
-            <input id="btnToggle" type="checkbox" class="btn btn--burger" />
+            <input id="btnToggle" type="checkbox" class="btn btn--burger" aria-label="Menu toggle button"/>
             <span class="bun">
               <span class="burger"></span>
             </span>
@@ -90,25 +87,25 @@
       <nav id="headerNav" class="header-nav" role="navigation" aria-label="Main navigation">
         <ul class="navbar" role="menubar">
           <li class="navbar__item" role="menuitem">
-            <a class="link link--nav" href="#projects" aria-controls="projects" aria-selected="true">
+            <a class="link link--nav" href="#projects" aria-controls="projects">
               <span class="navbar__number"> 01. </span>
               <span class="navbar__title" data-section="header" data-value="first"> projects </span>
             </a>
           </li>
           <li class="navbar__item" role="menuitem">
-            <a class="link link--nav" href="#about">
+            <a class="link link--nav" href="#about" aria-controls="about">
               <span class="navbar__number" data-id="about"> 02. </span>
               <span class="navbar__title" data-id="about" data-section="header" data-value="second"> about </span>
             </a>
           </li>
           <li class="navbar__item" role="menuitem">
-            <a class="link link--nav" href="#contact">
+            <a class="link link--nav" href="#contact" aria-controls="contact">
               <span class="navbar__number" data-id="contact"> 03. </span>
               <span class="navbar__title" data-id="contact" data-section="header" data-value="third"> contact </span>
             </a>
           </li>
         </ul>
-        <a href="#" class="link main-link" data-section="header" data-value="button" role="button">Resume</a>
+        <a href="https://drive.proton.me/urls/K3HWTDS098#qMrgHsbi1qLy" class="link main-link" data-section="header" data-value="button" role="button" target="_blank">Resume</a>
       </nav>
     </header>
 
@@ -176,7 +173,7 @@
                 </div>
 
                 <img
-                src="src/assets/icons/arrow-scroll.svg"
+                src="src/assets/imgs/arrow-scroll.svg"
                 alt="Image of an arrow pointing down, indicating that you should scroll down to see more content."
                 class="img img--arrow-pointing-down"
                 aria-hidden="true"
@@ -191,7 +188,6 @@
             <div 
               class="home-picture-container home-animation hidden"
               data-animation="slide-right-blurred"  
-              aria-label="Alexander Pérez's picture"
             >
                   <div 
                     class="gradient gradient--dev"
@@ -221,13 +217,14 @@
                       /> -->
                   </div>
                   <img
-                  src="src/assets/imgs/dev-pic.png"
+                  src="src/assets/imgs/dev-pic-resized-2.webp"
                   alt="Image of the presentation photo of the Frontend Developer Alexander Perez"
 
                   data-section="alt"
                   data-value="alt-developer-presentation"
                   class="img img--dev-picture"
                   role="presentation"
+                  loading="lazy"
                   />
             </div>
           </div>
@@ -269,23 +266,25 @@
                       
                       data-section="alt"
                       data-value="alt-icon-north-east"
+                      loading="lazy"
                       >
                     </div>
-                    <ul class="card-info__description">
+                    <div class="card-info__description">
                       <p
                         data-section="projects"
                         data-value="first-card-description"
                       >
                       JavaScript practice using localStorage +</p>
-                    </ul>
+                    </div>
                   </div>
                   <img
-                    src="src/assets/imgs/projects/todoapp2.png"
+                    src="src/assets/imgs/projects/prueba.webp"
                     alt="Image of two smartphone mockups with the application 'To Do App' on the screen and with a white background. The app displays a list of tasks on both phones, with some tasks marked as done and others still to be done"
                     class="card__image"
 
                     data-section="alt"
                     data-value="alt-to-do-app"
+                    loading="lazy"
                   />
                 </a>
               </div>
@@ -312,25 +311,27 @@
 
                       data-section="alt"
                       data-value="alt-icon-north-east"
+                      loading="lazy"
                       >
                     </div>
-                    <ul class="card-info__description">
+                    <div class="card-info__description">
                       <p
                         data-section="projects"
                         data-value="second-card-description"
                       >
                       Game built with JavaScript functions
                       </p>
-                    </ul>
+                    </div>
                   </div>
                   <img
-                    src="src/assets/imgs/projects/simonsays.png"
+                    src="src/assets/imgs/projects/prueba-2.webp"
                     alt="To Do List App"
                     class="card__image"
                     alt="Image of a mockup of the 'Simon Dice' project. The background of the image is light blue and two screenshots of the game are shown at different stages. The first screenshot shows the main or home screen of the game, while the second screenshot shows the game itself, with a current score of 7 and the highest score previously achieved of 4."
 
                     data-section="alt"
                     data-value="alt-simon-says"
+                    loading="lazy"
                   />
                 </a>
               </div>
@@ -361,13 +362,15 @@
         <div class="about-container background-active">
           <img
             id="memoji"
-            src="src/assets/imgs/dev-memoji.png"
+            src="src/assets/imgs/dev-memoji.webp"
             alt="Image of developer Alexander Perez's memoji, showing a character with a smile and thumbs up. The character has fluffy black hair, brown eyes, and brown skin, and stands against a transparent background. The memoji is a digital representation of the developer, used as a profile image or to identify the developer in the About section."
             class="img about__memoji hidden"
             aria-hidden="true"
 
             data-section="alt"
             data-value="alt-memoji"
+            loading="lazy"
+
           />
 
           <div class="section-title">
