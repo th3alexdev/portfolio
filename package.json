@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "sass": "sass src/scss/styles.scss src/css/styles.css --no-source-map",
-    "postcss": "postcss src/css/styles.css -o src/docs/css/styles.min.css --no-map",
-    "build-sass": "npm run sass && npm run postcss && npm run build"
+    "postcss": "postcss src/css/styles.css -o src/css/styles.min.css --no-map",
+    "build-webapp": "npm run sass && npm run postcss && npm run build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
