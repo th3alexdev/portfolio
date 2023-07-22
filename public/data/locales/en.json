@@ -1,0 +1,61 @@
+{
+    "alt": 
+    {
+        "alt-arrow-pointing-down": "Arrow pointing down indicating you must scroll down to see more content.",
+        "alt-developer-presentation": "Photo of presentation photo of the frontend developer Alexander Perez",
+        "alt-icon-north-east": "Arrow icon pointing up and to the right in gray color, used as a link indicator on a card.",
+        "alt-to-do-app": "Mockup of two smartphones with the application 'To Do App' on the screen and with a white background. The app displays a list of tasks on both phones, with some tasks marked as done and others still to be done",
+        "alt-simon-says": "Mockup of the 'Simon Says' project with a blue background showing two screenshots of the game in different stages. The first screenshot shows the game's main or home screen, while the second screenshot shows the game itself, with a current score of 7 and a previous high score of 4.",
+        "alt-about-bg": "Image of a topographic map used as decoration in the About section. The image has a transparent background and shows a raised representation of mountains and valleys in shades of blue, creating an attractive visual effect.",
+        "alt-memoji": "Image of developer Alexander Perez's memoji, showing a character with a smile and thumbs up. The character has fluffy black hair, brown eyes, and brown skin, and stands against a transparent background. The memoji is a digital representation of the developer, used as a profile image or to identify the developer in the About section."
+    },
+    "settings": 
+    {
+        "title": "Switch language"
+    },
+    
+    "header": 
+    {
+        "first": "projects",
+        "second": "about",
+        "third": "contact",
+        "button": "Resume"
+    },
+
+    "home": 
+    { 
+        "greeting": "Hello, I'm",
+        "description": "I am a <span class='underline underline--yellow'>Frontend Developer</span> with experience in JavaScript and React with a passion for creating innovative and easy-to-use applications that improve the user experience.",
+        "get-in-touch": "Let's get in touch!",
+        "msg": "I love JS! 💛"
+    },
+
+    "projects": 
+    {
+        "title": "Crafted with love.",
+        "first-card-title": "To Do App",
+        "first-card-description": "JavaScript practice using localStorage +",
+        
+        "second-card-title": "Simon Says",
+        "second-card-description": "Game built with JavaScript functions"
+    },
+
+    "about": 
+    {
+        "title": "About Me.",
+        "presentation": "Hello! My name is Alexander, I'm 20 years old and I'm from Venezuela. I am a frontend developer with a great passion for programming. I love learning new things every day and I enjoy creating projects that allow me to use my skills to do something meaningful.",
+        "currently": "Currently, I am studying Computer Science and constantly taking courses at <a href='https://platzi.com/p/alexanderfranciscog/' class='external-link' target='_blank'>Platzi<img class='icon icon--link' src='/src/assets/icons/north-east-blue.svg' alt='icon'></a> to improve my skills in JavaScript, React and other web technologies. I look for opportunities to continue learning and growing in the field of web development.",
+        "technologies": "Technologies I've been working on recently"
+    },
+
+    "contact":
+    {
+        "title": "Get in touch.",
+
+        "opportunities": "I am always open to new opportunities that allow me to grow professionally and contribute my knowledge to interesting projects. If you're looking for a skilled and passionate developer to work on your next project, don't hesitate to get in touch.",
+
+        "button": "Say hello!",
+        
+        "built": "Designed and built by Alexander Pérez"
+    }
+}

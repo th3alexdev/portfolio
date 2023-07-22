@@ -1,0 +1,62 @@
+{
+    "alt": 
+    {
+        "alt-arrow-pointing-down": "Flecha apuntando hacia abajo indicando debe desplazarse hacia abajo para ver más contenido.",
+        "alt-developer-presentation": "Foto de presentación del desarrollador frontend Alexander Perez",
+        "alt-icon-north-east": "Mockup de dos smartphones con la aplicación 'To Do App' en la pantalla y con fondo blanco. La aplicación muestra una lista de tareas en ambos teléfonos, con algunas tareas marcadas como realizadas y otras aún por realizar.",
+        "alt-simon-says": "Mockup del proyecto 'Simon Dice' con el fondo azul donde se muestran dos capturas de pantalla del juego en diferentes etapas. La primera captura de pantalla muestra la pantalla principal o de inicio del juego, mientras que la segunda captura de pantalla muestra el juego en sí, con una puntuación actual de 7 y la puntuación más alta alcanzada anteriormente de 4.",
+        "alt-about-bg": "Imagen de un mapa topográfico utilizado como decoración en la sección Acerca de. La imagen tiene un fondo transparente y muestra una representación en relieve de montañas y valles en tonos azules, creando un atractivo efecto visual.",
+        "alt-memoji": "Memoji del desarrollador Alexander Pérez, que muestra un personaje con una sonrisa y un pulgar hacia arriba. El personaje tiene cabello negro esponjoso, ojos marrones y piel morena, y se encuentra sobre un fondo transparente. El memoji es una representación digital del desarrollador, que se utiliza como imagen de perfil o para identificar al desarrollador en la sección Acerca de."
+
+    },
+
+    "settings": 
+    {
+        "title": "Cambiar idioma"
+    },
+
+    "header": 
+    {
+        "first": "proyectos",
+        "second": "sobre mí",
+        "third": "contacto",
+        "button": "Currículum"
+    },
+
+    "home": 
+    { 
+        "greeting": "Hola, soy",
+        "description": "<span class='underline underline--yellow'>Desarrollador Frontend</span> con experiencia en JavaScript y React con pasión por crear aplicaciones innovadoras y fáciles de usar que mejoren la experiencia del usuario.",
+        "get-in-touch": "¡Contáctame!",
+        "msg": "¡JS es cool! 💛"
+    },
+
+    "projects": 
+    {
+        "title": "Proyectos creados con amor.",
+        "first-card-title": "Lista de Tareas",
+        "first-card-description": "Practica de JavaScript usando localStorage +",
+        
+        "second-card-title": "Simon Dice",
+        "second-card-description": "Juego construido con funciones de JavaScript"
+    },
+
+    "about": 
+    {
+        "title": "Sobre mí.",
+        "presentation": "¡Hola! Mi nombre es Alexander y soy de Venezuela. Tengo 20 años y soy desarrollador frontend con una gran pasión por la programación. Me encanta aprender cosas nuevas todos los días y disfruto creando proyectos que me permitan usar mis habilidades para hacer algo significativo.",
+        "currently": "Actualmente estoy estudiando Ciencias de la Computación y tomando constantemente cursos en <a href='https://platzi.com/p/alexanderfranciscog/' class='external-link' target='_blank'>Platzi<img class='icon icon--link' src='/src/assets/icons/north-east-blue.svg' alt='icon'></a> para mejorar mis habilidades en JavaScript, React y otras tecnologías web. Busco oportunidades para seguir aprendiendo y creciendo en el campo del desarrollo web.",
+        "technologies": "Las tecnologías en las que he estado trabajando recientemente"
+    },
+
+    "contact":
+    {
+        "title": "Contáctame.",
+
+        "opportunities": "Siempre estoy abierto a nuevas oportunidades que me permitan crecer profesionalmente y aportar mis conocimientos a proyectos interesantes. Si está buscando un desarrollador hábil y apasionado para trabajar en su próximo proyecto, no dude en ponerse en contacto.",
+
+        "button": "¡Di hola!",
+        
+        "built": "Diseñado y construido por Alexander Pérez"
+    }
+}
