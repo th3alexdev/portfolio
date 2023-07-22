@@ -14,6 +14,7 @@
     padding: 0px 15px 0 4px;
 
     transition: transform .3s;
+    color: inherit;
 }
 
 .external-link:hover > .icon--link {
@@ -21,15 +22,20 @@
 }
 
 .main-link {
-    width: max-content;
+    width: 100%;
+    max-width: 150.97px;
     padding: 14px 30px;
     border-radius: 5px;
-    outline: 1px solid f.getColor('yellow-contrast');
+    text-align: center;
+
+    border: 1px solid f.getColor('yellow-contrast');
 
     font-weight: 300;
     font-size: .8rem;
-    transition: background 0.3s, outline 2s;
+    transition: background 0.3s;
     color: f.getColor('yellow-contrast');
+
+    will-change: background;
 
     &:hover {
         background-color: f.getColor('yellow-contrast-hover');
@@ -49,6 +55,7 @@
 
     color: f.getColor('light-gray');
     transition: transform .3s, color .3s;
+    will-change: transform, color;
 
     &:hover {
         transform: translateY(-5px);
