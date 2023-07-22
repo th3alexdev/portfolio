@@ -6,6 +6,10 @@ export default defineConfig({
     {
       name: 'sass',
       preprocess: sass,
-    },
+    }
   ],
+  preview:{
+    port: 5000
+  },
+  assetsDir: 'assets/'
 });
