@@ -1,29 +1,38 @@
-    @use '../utils/variables' as v;
-    @use '../utils/functions' as f;
-    @use '../utils/mixins' as *;
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as *;
 
-    .show {
-        opacity: 1;
-    }
+.show {
+    opacity: 1;
+}
 
-    .hidden {
-        opacity: 0;
-    }
+.hidden {
+    opacity: 0;
+}
 
-    .main {
-        position: relative;
-        max-width: 1150px;
-        transition: filter .3s ease-in-out;
-        padding-top: 85px;
+.main {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
 
-        @media(min-width: 1023px) {
-            width: 80%;
-            margin: 0 auto;
+    section {
+        font-family: f.getFont('main-font');
+        padding-right: 12px;
+        padding-left: 12px;
+
+        @media (min-width: 700px) {
+            padding-right: 42px;
+            padding-left: 42px;
         }
-
-        @media(min-width:1024px) {
-            padding-top: 110px;
-        }
-        // outline: 1px solid #Fff;
     }
+
+    section:not(.home) {
+        max-width: 1390px;
+        padding-top: 90;
+        padding-bottom: 90;
+    }
+}
 
