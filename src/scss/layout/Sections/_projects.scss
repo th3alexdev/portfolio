@@ -9,17 +9,32 @@
 
 .projects {
     @extend %section;
-    margin-bottom: 60px;
-    // outline: 1px solid #0f0;
-
     width: 100%;
 
-    @media(min-width: 650px) and (max-width: 1022px) {
-        padding: 110px 50px 15px 50px; 
-    }
+    &__view-all {
+        width: 100%;
+        max-width: 860px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: underline;
+        transition: transform .3s;
+        
+        a, img {
+            opacity: .8;
+            transition: transform .3s, opacity .2s;
+        }
 
-    @media (min-width: 1023px) {
-        padding-top: 125px;
-        margin-bottom: 130px;
+        a:hover, a:hover ~ img {
+            opacity: 1;
+            transform: translateX(15px);
+        }
+
+        a:hover ~ img {
+            transform: scale(1.2) translateX(15px);
+        }
     }
 }
