@@ -1,6 +1,7 @@
 node_modules/
 notes.txt
 example.js
+src/css/
 
 # Logs
 logs
