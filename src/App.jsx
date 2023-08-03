@@ -25,19 +25,11 @@ function App() {
                 <section id='home' className='home' aria-labelledby='homeTitle'>
                     <div className='home-container'>
                         <div className='home__profile'>
-                            <h1 id='homeTitle' className='home-title home-animation'
-                                data-animation='slide-in-blurred'
-                            >
+                            <h1 id='homeTitle' className='home-title'>
                                 <span className='name'>Alexander</span>
                                 <span className='name'>Pérez</span>
                             </h1>
-                            <h2
-                            className='home-text home__profile-text home-animation'
-                            data-section='home'
-                            data-value='description'
-
-                            data-animation='slide-in-blurred'
-                            >{t('home.primary')}</h2>
+                            <h2 className='home-text home__profile-text'>{t('home.primary')}</h2>
                             <ContactLinks 
                                 needsUserInteraction={true}
                                 size='md'
@@ -45,18 +37,13 @@ function App() {
                         </div>
                         <div className='home__image'>
                             <div 
-                            className='home__image-container home-animation'
-                            data-animation='slide-right-blurred'  
+                            className='home__image-container'
                             >
                                 <img
-                                    src='../src/assets/imgs/alexanderperez.png'
+                                    src='/assets/alexanderperez.webp'
                                     alt='Image of the presentation photo of the Frontend Developer Alexander Perez'
-
-                                    data-section='alt'
-                                    data-value='alt-developer-presentation'
                                     className='img'
                                     role='presentation'
-                                    loading='lazy'
                                 />
                             </div>
                             <p className='home-text home-text--right'>{t('home.secondary')}</p>
@@ -72,10 +59,10 @@ function App() {
                             ))
                         }
                     </div>
-                    <div className='projects__view-all'>
+                    {/* <div className='projects__view-all'>
                         <a href='#allproject'>{t('projects.moreprojects')}</a>
                         <img src='./src/assets/icons/north-east.svg' alt='' className='icon'/>
-                    </div>
+                    </div> */}
                 </section>
                 <section id='about' className='about'>
                     <h1 className='about-title'>{t('about.title')}</h1>
@@ -92,7 +79,7 @@ function App() {
                                     <h2 className='tools__li-title'>
                                         {t('about.tools.frontend.title')}
                                     </h2>
-                                    <p className='tools__li-desc'>JavaScript(ES6+), React, TypeScript, Vitejs, HTML5, Git/GitHub, HTML5</p>
+                                    <p className='tools__li-desc'>JavaScript(ES6+), React, TypeScript, Vitejs, HTML5, Git/GitHub</p>
                                 </li>
                                 <li className='tools__li'>
                                     <h2 className='tools__li-title'>
@@ -140,8 +127,7 @@ function App() {
                 <section id='contact' className='contact' aria-labelledby='contactTitle'>
                     <div className='contact-container'>
                         <div className='contact-title'>
-                            <h1 id='contactTitle' className='title contact-title__main'
-                                data-section='contact' data-value='title'>
+                            <h1 id='contactTitle' className='title contact-title__main'>
                                 {t('contact.bg-title')}
                             </h1>
                             <div className='contact-title__secondary'>
