@@ -13,8 +13,6 @@ $theme-default: (
 
     // backgrounds
     'bg-color-primary': #0E1016,
-    'bg-color-secondary': #343a4e,
-    'about-bg-color': #f1f0f0,
         
     // cards
     'card-bg': #212531,
@@ -28,14 +26,6 @@ $theme-default: (
     // contact
     'contact-main-title': #0E1016,
 
-    // gradients
-    'yellow-gradient':  "background: linear-gradient(to right, #FFEE92 0%, #ffc74e 100%)",
-    'blue-gradient':  "background: linear-gradient(0deg, rgba(204,204,255,1) 0%, rgba(218,232,254,1) 100%)",
-
-    // secondary
-    'yellow-contrast': #ffd461,
-    'yellow-contrast-hover': #916c062b,
-    'light-gray': #a8b2d1
 );
 
 $fonts: (
