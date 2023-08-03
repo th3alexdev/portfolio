@@ -5,14 +5,14 @@
 .navbar {
   display: flex;
   flex-wrap: nowrap;
-
-  @media (max-width: 649px) {
+  text-transform: uppercase;
+  
+  @media (max-width: 780px) {
     flex-direction: column;
-    margin-bottom: 65px;
     gap: 25px;
   }
 
-  @media(min-width: 650px) {
+  @media(min-width: 780px) {
     margin-bottom: 0;
     height: 100%;
     flex-direction: row;
@@ -21,26 +21,23 @@
     gap: 55px;
   }
 
-  &__item {
-    display: block;
+  @media (max-width: 779px) {
+    width: max-content;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    gap: 42px;
+    justify-content: center;
+    font-size: 1.9rem;
   }
 
-
-  &__number {
-      display: block;
-      line-height: 18px;
-      color: f.getColor('yellow-contrast');
-      font-size: 0.7rem;
-  
-      @media(min-width: 650px) {
-        font-size: 0.7rem;
-      }
+  &__item {
+    display: block;
   }
   
   &__title {
     display: block;
-    font: {family: "Space Grotesk", sans-serif;
-    font-size: 1.2rem;}
+    // font-size: inherit;
     line-height: 20px;
     color: #c6c8d8;
     transition: color .3s;
@@ -50,7 +47,7 @@
     }
   
     @media(min-width: 650px) {
-      font-size: 1rem;
+      font-size: inherit;
     }
   }
 }

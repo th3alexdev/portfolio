@@ -18,10 +18,12 @@
     align-items: center;
     gap: 65px;
 
-    section {
-        font-family: f.getFont('main-font');
-        padding-right: 12px;
-        padding-left: 12px;
+    section:not(.home):not(.about):not(.wrapper) {
+        max-width: 1390px;
+    }
+
+    section:not(.wrapper) {
+        padding: 60px 12px;
 
         @media (min-width: 700px) {
             padding-right: 42px;
@@ -29,10 +31,11 @@
         }
     }
 
-    section:not(.home) {
-        max-width: 1390px;
-        padding-top: 90;
-        padding-bottom: 90;
+    section.home {
+        @media(min-width: 850px) {
+            padding-right: 25px;
+            padding-left: 25px;         
+        }
     }
 }
 
