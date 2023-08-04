@@ -1,5 +1,13 @@
-export { default as HeaderNav } from './components/HeaderNav'
-export { default as Card } from './components/Card'
-export { default as ContactLinks } from './components/ContactLinks'
-export { default as Footer } from './components/Footer'
-export { default as SliderCard } from './components/SliderCard'
+import HeaderNav from './components/HeaderNav';
+import Card from './components/Card';
+import ContactLinks from './components/ContactLinks';
+import Footer from './components/Footer';
+import SliderCard from './components/SliderCard';
+
+export {
+  HeaderNav,
+  Card,
+  ContactLinks,
+  Footer,
+  SliderCard,
+};
