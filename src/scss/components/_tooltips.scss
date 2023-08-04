@@ -1,0 +1,45 @@
+@use "../utils/variables" as v;
+@use "../utils/functions" as f;
+@use "../utils/mixins" as *;
+
+.tooltip {
+    position: relative;
+
+    &::before {
+        margin-top: 10px;
+
+        content: attr(data-tooltip);
+        position:absolute;
+
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        
+        width: 100px;
+        padding: 10px;
+        border-radius: 6px;
+        background: #00000044;
+        color: #fff;
+        text-align: center;
+    
+        font-size: .65rem;
+
+        white-space: pre-wrap;
+        filter: opacity(0);
+        transition: filter .3s ease;
+        visibility: hidden;
+        display: none;
+
+        @media(min-width: 850px) {
+            display: block;
+        }
+
+    }
+
+    &:hover {
+        &::before {
+            filter: opacity(1);
+            visibility: visible;
+        }
+    }
+}

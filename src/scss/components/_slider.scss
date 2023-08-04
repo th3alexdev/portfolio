@@ -1,0 +1,136 @@
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as *;
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 3500px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    &-text {
+        position: absolute;
+        left: 50%;
+        bottom: 65px;
+        width: 90%;
+        font-size: .7rem;
+        transform: translateX(-50%);
+        text-align: center;
+        text-wrap: balance;
+
+        @media (min-width: 400px) and (max-width: 749px) {
+            width: 65%;
+        }
+
+        @media (min-width: 750px) and (max-width: 1249px) {
+            bottom: 5px;
+            width: 50%;
+            font-size: .75rem;
+        }
+
+        @media(min-width: 1250px) {
+            bottom: 15px;
+            width: 30%;
+        }
+    }
+}
+
+.slider {
+    position: absolute;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scroll 30s linear infinite;
+
+    // &:hover {
+    //     animation-play-state: paused; 
+    // }
+    
+    &-track {
+        display: flex;
+        width: 150%;
+    }
+}
+
+.slide {
+    position: relative;
+    width: 10%;
+    min-width: 260px;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 0 24.7px;
+
+    @media (min-width: 750px) {
+        min-width: 310px;
+        height: 215px;
+    }
+
+    &:hover > .display-info {
+        filter: opacity(1);
+    }
+
+    img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover
+    }
+
+    @media (min-width: 2000px) {
+        min-width: 360px;
+        height: 225px;
+    }
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50%)); }
+}
+
+.display-info {
+    
+    width: max-content;
+    position: absolute;
+    bottom: 12px;
+    left: 8px;
+
+    @media (min-width: 850px) {
+        filter: opacity(0);
+    }
+
+
+    &__title {
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+
+    &__director {
+        color: #ababab;
+        font-size: .7rem;
+    }
+
+    &-movie {
+        z-index: 0;
+        position: relative;
+        width: max-content;
+        padding: 2px 6px;
+        font-weight: 500;
+
+        &::before {
+            z-index: -15;
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.92);
+        }
+    }
+}
