@@ -1,0 +1,77 @@
+{
+    "header": {
+        "lang": "ES",
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "about": "Sobre Mí",
+        "contact": "Contacto",
+        "resume": "CV",
+        "tooltip": {
+            "lang": "Cambiar Idioma",
+            "resume": "Mostrar Currículum"
+        },
+        "aria": {
+            "menu": {
+                "open": "Abrir Menú",
+                "close": "Cerrar Menú"
+            }
+        }
+    },
+    "home": {
+        "primary": "Desarrollador Front-end apasionado por el desarrollo web y la creación de agradables experiencias de usuario.",
+        "secondary": "Centrado en aprender desde Caracas, Venezuela."
+    },
+    "projects": {
+        "0": {
+            "title": "SmartType",
+            "description": "Una potente extensión del navegador que permite a los usuarios crear comandos personalizados para automatizar tareas de mecanografía repetitivas."
+        },
+        "1": {
+            "title": "To Do App",
+            "description": "Una aplicación web interactiva de gestión de tareas para organizar tus tareas diarias de forma eficiente."
+        },
+        "2": {
+            "title": "Weather App",
+            "description": "Una aplicación web que permite a los usuarios buscar una ciudad y obtener las condiciones meteorológicas actuales y la previsión para la semana."
+        },
+        "3": {
+            "title": "Simón Dice",
+            "description": "Juego de memoria en el que el jugador debe repetir una secuencia de colores y sonidos de forma aleatoria a lo largo de la partida."
+        },
+        "moreprojects": "Ver todos los proyectos",
+        "alt": {
+            "links": {
+                "repo": "Repositorio de GitHub",
+                "demo": "Probar Demo"
+            }
+        }
+    },
+    "about": {
+        "title": "Doy vida a tus ideas",
+        "fst": "Mi objetivo es crear aplicaciones web que tengan un impacto positivo en la vida de las personas.",
+        "snd": "Uno de mis principales puntos fuertes es abordar los retos de forma creativa y eficaz, adaptando soluciones únicas. Además, destaco por mi capacidad para escuchar, dar y recibir opiniones de forma constructiva y abierta, lo que constituye una parte importante de mi enfoque del trabajo en equipo.",
+        "thd": "Me considero un crítico de cine aficionado, por lo que disfruto viendo películas de diversos géneros y épocas. También amo profundamente a los animales, la música de los 90 y tocar la guitarra.",
+        "fth": "Actualmente, estoy buscando oportunidades para seguir aprendiendo y creciendo en el campo del desarrollo web.",
+        "tools": {
+            "frontend": {
+                "title": "Tecnologías Frontend"
+            },
+            "ui": {
+                "title": "Librerías UI"
+            },
+            "backend": {
+                "title": "Tecnologías Backend"
+            }
+        }
+    },
+    "movies": {
+        "title": "Algunas películas que he visto recientemente y que recomiendo ;)"
+    },
+    "contact": {
+        "bg-title": "Contáctame",
+        "text": "Siempre estoy abierto a nuevas oportunidades que me permitan crecer profesionalmente."
+    },
+    "footer": {
+        "text": "Diseñado y construido por "
+    }
+}

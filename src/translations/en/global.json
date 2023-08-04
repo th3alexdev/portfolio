@@ -1,0 +1,77 @@
+{
+    "header": {
+        "lang": "EN",
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact",
+        "resume": "RESUME",
+        "tooltip": {
+            "lang": "Switch Language",
+            "resume": "View Resume"
+        },
+        "aria": {
+            "menu": {
+                "open": "Open Menu",
+                "close": "Close Menu"
+            }
+        }
+    },
+    "home": {
+        "primary": "Front-end developer passionate about web development and creating great user experiences.",
+        "secondary": "Focused and constantly learning from Caracas, Venezuela."
+    },
+    "projects": {
+        "0": {
+            "title": "SmartType",
+            "description": "A powerful browser extension enabling users to create custom commands for automating repetitive typing tasks."
+        },
+        "1": {
+            "title": "To Do App",
+            "description": "An interactive task management web application for organizing your daily tasks efficiently."
+        },
+        "2": {
+            "title": "Weather App",
+            "description": "A web application that allows users to search for a city and retrieve the current weather conditions and the forecast for the week."
+        },
+        "3": {
+            "title": "Simon Says",
+            "description": "A memory game in which the player must repeat a sequence of colors and sounds randomly throughout the game."
+        },
+        "moreprojects": "View all projects",
+        "alt": {
+            "links": {
+                "repo": "GitHub Repository",
+                "demo": "Live Demo"
+            }
+        }
+    },
+    "about": {
+        "title": "I Bring Your Ideas To Life",
+        "fst": "My focus is on creating web applications that have a positive impact on people's lives.",
+        "snd": "One of my main strengths is to approach challenges creatively and effectively, tailoring unique solutions. In addition, I excel in my ability to listen, give and receive feedback in a constructive and open manner, which is an important part of my approach to teamwork.",
+        "thd": "I consider myself an amateur film critic, so I enjoy watching movies of various genres and eras. I also deeply love animals, 90's music, and playing the guitar.",
+        "fth": "Currently, I am looking for opportunities to continue learning and growing in the web development field.",
+        "tools": {
+            "frontend": {
+                "title": "Frontend Tools"
+            },
+            "ui": {
+                "title": "UI Libraries"
+            },
+            "backend": {
+                "title": "Backend Tools"
+            }
+        }
+    },
+    "movies": {
+        "title": "Some movies I have seen recently and recommend ;)"
+    },
+    "contact": {
+        "bg-title": "GET IN TOUCH",
+        "text": "I am always open to new opportunities that allow me to grow professionally."
+    },
+    "footer": {
+        "text": "Design and built by "
+    }
+}
