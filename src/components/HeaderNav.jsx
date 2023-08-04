@@ -25,22 +25,22 @@ function HeaderNav({ on, toggle }) {
         </button>
         <ul className='navbar mirror-bg' role='menubar' >
           <li className='navbar__item' role='menuitem'>
-            <a className='link link--nav' href='#home' aria-controls='projects'>
+            <a className='link link--nav' href='#home' aria-controls='projects' onClick={toggle}>
               <span className='navbar__title'>{t('header.home')}</span>
             </a>
           </li>
           <li className='navbar__item' role='menuitem'>
-            <a className='link link--nav' href='#projects' aria-controls='projects'>
+            <a className='link link--nav' href='#projects' aria-controls='projects' onClick={toggle}>
               <span className='navbar__title'>{t('header.projects')}</span>
             </a>
           </li>
           <li className='navbar__item' role='menuitem'>
-            <a className='link link--nav' href='#about' aria-controls='about'>
+            <a className='link link--nav' href='#about' aria-controls='about' onClick={toggle}>
               <span className='navbar__title'>{t('header.about')}</span>
             </a>
           </li>
           <li className='navbar__item' role='menuitem'>
-            <a className='link link--nav' href='#contact' aria-controls='contact'>
+            <a className='link link--nav' href='#contact' aria-controls='contact' onClick={toggle}>
               <span className='navbar__title'>{t('header.contact')}</span>
             </a>
           </li>
