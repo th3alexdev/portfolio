@@ -14,7 +14,6 @@
     justify-content: flex-end;
     align-items: center;
     font-weight: 600;
-   
 
     @media(min-width: 650px) {
         width: 100%;
@@ -95,7 +94,10 @@
     }
 
     &-nav--active{
-        transform: translateX(0);
+        
+        @media(max-width:779px ) {
+            transform: translateX(0);
+        }
     }
 
     &-nav-toggle-btn {
