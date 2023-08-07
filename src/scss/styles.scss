@@ -1,28 +1,27 @@
+/* base */ 
+@forward 'base/fonts';
+@forward 'base/base';
+@forward 'base/typography';
 
-@forward "base/fonts";
+/* layout */
+@forward 'layout/header';
+@forward 'layout/main';
+@forward 'layout/footer';
+@forward 'layout/Sections/home';
+@forward 'layout/Sections/projects';
+@forward 'layout/Sections/about';
+@forward 'layout/Sections/contact';
 
-@forward "base/base";
-@forward "base/typography";
-@forward "layout/header";
-@forward "layout/main";
-@forward "layout/Sections/home";
-@forward "layout/Sections/projects";
-@forward "layout/Sections/about";
-@forward "layout/Sections/contact";
-@forward "components/animations";
-@forward "components/imgs";
-@forward "components/get-in-touch";
-@forward "components/lists";
-@forward "components/links";
-@forward "components/btns";
+/* components*/
+@forward 'components/imgs';
 @forward 'components/cards';
+@forward 'components/nav';
 @forward 'components/icons';
-@forward "components/burger";
-@forward 'components/gradients';
-@forward "components/nav";
+@forward 'components/links';
+@forward 'components/get-in-touch';
 @forward 'components/scrollbar';
-@forward 'components/loader';
-@forward 'components/sidebars';
-@forward 'components/shapes';
-@forward 'components/settings';
-@forward "components/titles";
+@forward 'components/tooltips';
+@forward 'components/mouse-icon';
+@forward 'components/burger';
+@forward 'components/slider';
+@forward 'components/animations';

@@ -1,0 +1,39 @@
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as *;
+
+.footer {
+    position: relative;
+    width: 100%;
+
+    &-info{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 44px;
+        
+        text-align: center;
+        text-transform: uppercase;
+        border-top: 1px solid f.getColor('text-color-primary');
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        
+        font-size: .7rem;
+        font-weight: 700;
+
+        &-link {
+            text-decoration: underline;
+        }
+
+        @media(min-width: 350px) {
+            flex-direction: row;
+        }
+    }
+}

@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexander Pérez 🤟 | Portfolio</title>
+    <title>Alexander Pérez 🤟 — Frontend Developer</title>
 
-    <!-- meta tags: en -->
     <meta name="description" lang="en" content="Discover the portfolio of Alexander Pérez, a Junior Frontend Developer specialized in JavaScript and React, with experience in SASS, CSS, HTML and GIT. Explore his portfolio and contact him to create your next web project!">
     <meta name="keywords" lang="en" content="Alexander Perez, Frontend Developer, Junior, JavaScript, React, ReactJS, SASS, CSS, HTML, GIT, web development, user experience">
 
-    <!-- meta tags: es -->
     <meta name="description" lang="es" content="Descubre el portafolio de Alexander Pérez, programador frontend junior especializado en JavaScript y React, con experiencia en SASS, CSS, HTML y GIT. Explore su portafolio y contáctelo para crear su próximo proyecto web!">
     <meta name="keywords" lang="es" content="Alexander Perez, Programación, Programador Junior, JavaScript, React, ReactJS, SASS, CSS, HTML, GIT, desarrollo web, experiencia de usuario">
     
-    <!-- open graph: en -->
     <meta property="og:title" lang="en" content="Alexander Pérez | Frontend Developer Portfolio">
     <meta property="og:site_name" lang="en" content="Alexander Pérez | Portfolio">
     <meta property="og:url" content="https://th3alexdev.netlify.app/">
@@ -24,7 +21,6 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-    <!-- open graph: es -->
     <meta property="og:title" lang="es" content="Alexander Pérez | Programador Frontend">
     <meta property="og:site_name" lang="es" content="Alexander Pérez | Portafolio">
     <meta property="og:url" content="https://th3alexdev.netlify.app/">
@@ -34,7 +30,6 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
-    <!-- twitter cards: en -->
     <meta name="twitter:card" lang="en" content="summary">
     <meta name="twitter:title" lang="en" content="Alexander Pérez | Frontend Developer Portfolio">
     <meta name="twitter:site" lang="en" content="@th3alexdev">
@@ -42,7 +37,6 @@
     <meta name="twitter:image" lang="en" content="/imgs/open-graph/open-graph-en.png">
     <meta name="twitter:image:alt" lang="en" content="Alexander Pérez Portfolio - Frontend Developer">
 
-    <!-- twitter cards: es -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" lang="es" content="Alexander Pérez | Portafolio Programador Frontend">
     <meta name="twitter:site" content="@th3alexdev">
@@ -50,8 +44,6 @@
     <meta name="twitter:image" lang="es" content="/imgs/open-graph/open-graph-es.png">
     <meta name="twitter:image:alt" lang="es" content="Alexander Pérez Portfolio - Frontend Developer">
 
-
-    <!-- fav icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicons/favicon-16x16.png">
@@ -63,426 +55,7 @@
     <meta name="theme-color" content="#181e30">
   </head>
   <body>
-    <div class="settings" role="complementary">
-      <button id="switchLang" class="settings-button" data-language="" data-section="settings" data-value="title" data-pressed="" aria-label="Switch language button">
-        Swith language
-      </button>
-    </div>
-    
-    <!-- <div id="loader" class="loader">
-      <div class="loader-container"></div>
-    </div> -->
-
-    <header class="header">
-      <div class="burger-pos">
-        <div class="burger-cont">
-          <div class="wrapper">
-            <input id="btnToggle" type="checkbox" class="btn btn--burger" aria-label="Menu toggle button"/>
-            <span class="bun">
-              <span class="burger"></span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <nav id="headerNav" class="header-nav" role="navigation" aria-label="Main navigation">
-        <ul class="navbar" role="menubar">
-          <li class="navbar__item" role="menuitem">
-            <a class="link link--nav" href="#projects" aria-controls="projects">
-              <span class="navbar__number"> 01. </span>
-              <span class="navbar__title" data-section="header" data-value="first"> projects </span>
-            </a>
-          </li>
-          <li class="navbar__item" role="menuitem">
-            <a class="link link--nav" href="#about" aria-controls="about">
-              <span class="navbar__number" data-id="about"> 02. </span>
-              <span class="navbar__title" data-id="about" data-section="header" data-value="second"> about </span>
-            </a>
-          </li>
-          <li class="navbar__item" role="menuitem">
-            <a class="link link--nav" href="#contact" aria-controls="contact">
-              <span class="navbar__number" data-id="contact"> 03. </span>
-              <span class="navbar__title" data-id="contact" data-section="header" data-value="third"> contact </span>
-            </a>
-          </li>
-        </ul>
-        <a href="https://drive.proton.me/urls/K3HWTDS098#qMrgHsbi1qLy" class="link main-link" data-section="header" data-value="button" role="button" target="_blank">Resume</a>
-      </nav>
-    </header>
-
-    <main id="main" class="main">
-      <section id="home" class="home" aria-labelledby="homeTitle">
-        <div class="home-container">
-          <div class="home__introduce">
-            <div class="home-introduce-container">
-                <p 
-                  class="greeting-hello home-animation hidden"
-                  data-section="home" 
-                  data-value="greeting" 
-
-                  data-animation="slide-in-blurred">
-                  Hello, I'm
-                </p>
-                <h1 
-                  id="homeTitle"
-                  class="greeting-name home-animation hidden"
-
-                  data-animation="slide-in-blurred"
-                >
-                  Alexander Pérez.
-                </h1>
-
-                <div class="home-introduce__text-box">
-                  <p
-                   class="text text--principal home-animation hidden"
-                   data-section="home"
-                   data-value="description"
-
-                   data-animation="slide-in-blurred"
-                  >
-                    I am an experienced <span class="underline underline--yellow">Frontend Developer</span> skilled in JavaScript and React 
-                    with a passion for creating innovative and user-friendly
-                    apps that enhance the user experience.
-                </p>
-
-                <div class="get-in-touch hidden home-animation" data-animation="slide-right-blurred">
-                  <p class="get-in-touch__text" data-section="home" data-value="get-in-touch" >
-                    Let's get in touch:
-                  </p>
-                  <ul class="get-in-touch-list">
-                    <li class="get-in-touch-list__i undercover">
-                        <a href="https://github.com/th3alexdev" class="link" target="_blank" aria-label="GitHub profile">
-                            <span class="solid-icon icon-medium solid-icon--github"></span>
-                        </a>
-                    </li>
-                    <li class="get-in-touch-list__i undercover">
-                        <a href="https://twitter.com/th3alexdev" class="link" target="_blank" aria-label="Twitter profile">
-                          <span class="solid-icon icon-medium solid-icon--twitter"></span>
-                        </a>
-                    </li>
-                    <li class="get-in-touch-list__i undercover">
-                        <a href="https://www.linkedin.com/in/alexander-p%C3%A9rez-graterol-b60b26265/" class="link" target="_blank" aria-label="LinkedIn profile">
-                          <span class="solid-icon icon-medium solid-icon--linkedin"></span>
-                        </a>
-                    </li>
-                    <li class="get-in-touch-list__i undercover">
-                      <a href="mailto:dev.alexanderperez@protonmail.com" class="link" target="_blank" aria-label="Email">
-                        <span class="solid-icon icon-medium solid-icon--mail"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <img
-                src="src/assets/imgs/arrow-scroll.svg"
-                alt="Image of an arrow pointing down, indicating that you should scroll down to see more content."
-                class="img img--arrow-pointing-down"
-                aria-hidden="true"
-                
-                data-section="alt"
-                data-value="alt-arrow-pointing-down"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="home__profile">
-            <div 
-              class="home-picture-container home-animation hidden"
-              data-animation="slide-right-blurred"  
-            >
-                  <div 
-                    class="gradient gradient--dev"
-                    aria-hidden="true"
-                  >
-                    <span 
-                      id="msg"
-                      data-section="home" 
-                      data-value="msg"
-                    >I love JS! 💛</span>
-
-                     <!-- <div id="msg" class="words-box">
-                      <ul class="words">
-                        <li class="words__item"><span class="word">I love JS! 💛</span></li>
-                        <li class="words__item"><span class="word">Frontend is cool 🤩</span></li>
-                        <li class="words__item"><span class="word">I'm a Freelancer 👨🏻‍💻</span></li>
-                        <li class="words__item"><span class="word">Learning every day 💪</span></li>
-                        <li class="words__item"><span class="word">I'm from Venezuela 🇻🇪</span></li>
-                      </ul>
-                    </div>
-                     -->
-                       <!-- <img
-                      src="/src/assets/icons/arrow-two.svg"
-                      alt="arrow pointing top"
-                      class="img img--arrow-two"
-                      aria-hidden="true"
-                      /> -->
-                  </div>
-                  <img
-                  src="src/assets/imgs/dev-pic-resized-2.webp"
-                  alt="Image of the presentation photo of the Frontend Developer Alexander Perez"
-
-                  data-section="alt"
-                  data-value="alt-developer-presentation"
-                  class="img img--dev-picture"
-                  role="presentation"
-                  loading="lazy"
-                  />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="projects" aria-labelledby="projectsTitle">
-        <div class="projects-container">
-
-          <!-- <h1 id="title" class="title title--principal special-animation">Crafted with love.</h1> 
-          -->
-          <div class="section-title">
-            <div class="title-box">
-              <h1 id="projectsTitle" class="title title--projects" data-section="projects" data-value="title">Crafted with love.</h1> 
-            </div>
-          </div>
-
-          <div class="cards-container" role="list">
-            <!-- <div class="row-type-one"> -->
-              <div 
-                class="card hidden"
-                data-animation="slide-down-blurred"
-                role="listitem" aria-posinset="1" aria-setsize="2"
-              >
-                <a href="https://th3alexdev.github.io/todoapp/" target="_blank" class="card-link">
-                  <div class="card-info card-info--contrast">
-                    <div class="card-info__title">
-                      <h2
-                        data-section="projects"
-                        data-value="first-card-title"
-                      >
-                      To Do App
-                      </h2>
-                      <img 
-                      class="icon icon--card" 
-                      src="src/assets/icons/north-east-gray.svg"
-                      class="icon icon--card" 
-                      alt="Arrow icon pointing up and to the right in gray color, used as a link indicator on a card."
-                      
-                      data-section="alt"
-                      data-value="alt-icon-north-east"
-                      loading="lazy"
-                      >
-                    </div>
-                    <div class="card-info__description">
-                      <p
-                        data-section="projects"
-                        data-value="first-card-description"
-                      >
-                      JavaScript practice using localStorage +</p>
-                    </div>
-                  </div>
-                  <img
-                    src="src/assets/imgs/projects/prueba.webp"
-                    alt="Image of two smartphone mockups with the application 'To Do App' on the screen and with a white background. The app displays a list of tasks on both phones, with some tasks marked as done and others still to be done"
-                    class="card__image"
-
-                    data-section="alt"
-                    data-value="alt-to-do-app"
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-
-              <div 
-                class="card hidden"
-                data-animation="slide-down-blurred"
-                role="listitem" aria-posinset="2" aria-setsize="2"
-              >
-                <a href="https://th3alexdev.github.io/simonsays/" target="_blank" class="card-link">
-                  <div class="card-info">
-                    <div class="card-info__title">
-                      <h2
-                        data-section="projects"
-                        data-value="second-card-title"
-                      >
-                      Simon Says
-                      </h2>
-                      <img 
-                      class="icon icon--card" 
-                      src="src/assets/icons/north-east-white.svg" 
-                      class="icon icon--card" 
-                      alt="Arrow icon pointing up and to the right in gray color, used as a link indicator on a card."
-
-                      data-section="alt"
-                      data-value="alt-icon-north-east"
-                      loading="lazy"
-                      >
-                    </div>
-                    <div class="card-info__description">
-                      <p
-                        data-section="projects"
-                        data-value="second-card-description"
-                      >
-                      Game built with JavaScript functions
-                      </p>
-                    </div>
-                  </div>
-                  <img
-                    src="src/assets/imgs/projects/prueba-2.webp"
-                    alt="To Do List App"
-                    class="card__image"
-                    alt="Image of a mockup of the 'Simon Dice' project. The background of the image is light blue and two screenshots of the game are shown at different stages. The first screenshot shows the main or home screen of the game, while the second screenshot shows the game itself, with a current score of 7 and the highest score previously achieved of 4."
-
-                    data-section="alt"
-                    data-value="alt-simon-says"
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-            <!-- </div> -->
-
-          </div>
-        </div>
-      </section>
-      
-      <section id="about" class="about" aria-labelledby="aboutTitle">
-        <div
-         id="aboutBg"
-         class="about-background hidden"
-        >
-          <div class="about-background__shadow"></div>
-          <img 
-            src="src/assets/svg/topography.svg" 
-            alt="Image of a topographic map in SVG format, used as decoration in the About section. The image has a transparent background and shows a raised representation of mountains and valleys in different shades of gray, creating an attractive visual effect."
-            class="about-background__image"
-            loading="lazy"
-            aria-hidden="true"
-
-            data-section="alt"
-            data-value="alt-about-bg"
-          />
-        </div>
-
-        <div class="about-container background-active">
-          <img
-            id="memoji"
-            src="src/assets/imgs/dev-memoji.webp"
-            alt="Image of developer Alexander Perez's memoji, showing a character with a smile and thumbs up. The character has fluffy black hair, brown eyes, and brown skin, and stands against a transparent background. The memoji is a digital representation of the developer, used as a profile image or to identify the developer in the About section."
-            class="img about__memoji hidden"
-            aria-hidden="true"
-
-            data-section="alt"
-            data-value="alt-memoji"
-            loading="lazy"
-
-          />
-
-          <div class="section-title">
-            <div class="title-box">
-              <h1 id="aboutTitle" class="title title--about" data-section="about" data-value="title">About me.</h1> 
-            </div>
-          </div>
-          <!-- <h2 class="title title--about">About Me.</h2> -->
-
-
-          <p class="text text--secondary" data-section="about" data-value="presentation">
-            Hello! My name is Alexander. I am 20 years old Venezuelan with a huge passion for programming.
-            I love learning new things every day and enjoy creating  proyects that allow me to use my skills to do
-            something meaningful.
-          </p>
-          <p class="text text--secondary" data-section="about" data-value="currently">
-            Currently, I'm studying Computer Science and taking constantly courses on <a href="https://platzi.com/p/alexanderfranciscog/" class="external-link" target="_blank" rel="noopener noreferrer">Platzi
-              <img class="icon icon--link" src="src/assets/icons/north-east-blue.svg" alt="Arrow icon pointing up and to the right in gray color, used as a link indicator on a card."
-              data-section="alt"
-              data-value="alt-icon-north-east"
-              >
-            </a> to improve my skills in JavaScript, React and other web technologies. I'm looking for opportunities to continue learning and growing in the field of web development.
-          </p>
-          <div class="about__skills">
-            <p class="text text--secondary" data-section="about" data-value="technologies">
-              The tecnlogies I've been working recently:
-            </p>
-            <ul class="skills" aria-label="Technologies I've been working recently">
-              <li class="skills__item">
-                  JavaScript (E6+)
-              </li>
-              <li class="skills__item">
-                  TypeScript
-              </li>
-              <li class="skills__item">
-                  React
-              </li>
-              <li class="skills__item">
-                  SASS
-              </li>
-              <li class="skills__item">
-                  GIT
-              </li>
-              <li class="skills__item">
-                  HTML
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      
-      <section id="contact" class="contact" aria-labelledby="contactTitle">
-        <div class="contact-container">
-
-          <div class="section-title section-title--contact">
-              <div class="title-box">
-                <h1 id="contactTitle" class="title title--contact" data-section="contact" data-value="title">Get in touch.</h1> 
-              </div>
-          </div>
-
-          <p class="text contact__text" data-section="contact" data-value="opportunities">
-            I am always open to new opportunities that allow 
-            me to grow professionally and contribute my 
-            knowledge to interesting projects. If you're looking for a 
-            skilled and passionate developer to work on your next project,
-            don't hesitate to get in touch.
-          </p>
-          <a
-            href="mailto:dev.alexanderperez@protonmail.com"
-            class="link main-link"
-            data-section="contact"
-            data-value="button"
-            aria-label="Say hello!"
-            >Say hello!</a
-          >
-        </div>
-        <span class="contact__build-info" data-section="contact" data-value="built">Designed and built by Alexander Pérez</span>
-      </section>
-
-      <div class="sidebars-container" role="complementary">
-        <aside class="sidebar sidebar--socials social-media" aria-label="Social media links">
-            <div class="social-media-container">
-                <ul class="social-media-list " aria-label="Social media list">
-                    <li class="socials-list__i">
-                        <a href="https://github.com/th3alexdev" class="link" target="_blank" aria-label="Github profile link">
-                            <span class="regular-icon icon-small regular-icon--github"></span>
-                        </a>
-                    </li>
-                    <li class="socials-list__i">
-                        <a href="https://twitter.com/th3alexdev" class="link" target="_blank" aria-label="Twitter profile link">
-                          <span class="regular-icon icon-small regular-icon--twitter"></span>
-                        </a>
-                    </li>
-                    <li class="socials-list__i">
-                        <a href="https://www.linkedin.com/in/alexander-p%C3%A9rez-graterol-b60b26265/" class="link" target="_blank" aria-label="LinkedIn profile link">
-                          <span class="regular-icon icon-small regular-icon--linkedin"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
-        <aside class="sidebar sidebar--mail sidebar-contact" aria-label="Contact email">
-            <div class="sidebar-contact-container">
-                <p class="text sidebar-contact__text">
-                    <a href="mailto:dev.alexanderperez@protonmail.com" class="link mail-link" aria-label="Email link">dev.alexanderperez@protonmail.com</a>
-                </p>
-            </div>
-        </aside>
-      </div>
-
-    </main>
-    <script type="module" src="/src/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

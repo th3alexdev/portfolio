@@ -4,3 +4,7 @@
 @function getColor($color-name) {
     @return var(--#{$color-name});
 }
+
+@function getFont($font) {
+    @return var(--#{$font});
+}
