@@ -41,6 +41,7 @@
     line-height: 20px;
     color: #c6c8d8;
     transition: color .3s;
+    text-wrap: nowrap;
 
     &:hover {
       color: f.getColor('link-color-active');

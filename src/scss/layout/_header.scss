@@ -71,9 +71,9 @@
             transform: translateX(50%)
         }
         
-        @media(min-width: 650px) and (max-width: 1023px) {
-            right: 0;
-        }
+        // @media(min-width: 650px) and (max-width: 1023px) {
+        //     right: 0;
+        // }
 
         &__btn {
             @media(max-width: 779px) {
