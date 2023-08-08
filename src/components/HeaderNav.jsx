@@ -1,6 +1,9 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
+import menuIcon from '/public/icons/menu.svg'
+import closeIcon from '/public/icons/close.svg'
+
 function HeaderNav({ on, toggle }) {
 
   const [t, i18n] = useTranslation('global');
@@ -9,12 +12,12 @@ function HeaderNav({ on, toggle }) {
     <>
       <div className='burger-pos'>
         <button aria-label={t('header.aria.menu.open')}>
-          <img className='burger-pos-btn icon-med' src='/public/icons/menu.svg' alt='Menu' onClick={toggle} />
+          <img className='burger-pos-btn icon-med' src={menuIcon} alt='Menu' onClick={toggle} />
         </button>
       </div>
       <nav id='headerNav' className={`header-nav ${on ? 'header-nav--active' : ''}`} role='navigation' aria-label='Main navigation'>
         <button className='header-nav-toggle-btn' aria-label={t('header.aria.menu.close')}>
-          <img className='icon icon-med' src='/public/icons/close.svg' alt='Close Icon' onClick={toggle} />
+          <img className='icon icon-med' src={closeIcon} alt='Close Icon' onClick={toggle} />
         </button>
         <button 
           data-tooltip={t('header.tooltip.lang')} aria-label={t('header.tooltip.lang')} 
