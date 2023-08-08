@@ -21,7 +21,7 @@ function App() {
             <header className='header'>
                 <HeaderNav on={on} toggle={toggle} />
             </header>
-            <main className='main'>
+            <main className='main' onClick={on ? toggle : null}>
                 <section id='home' className='home' aria-labelledby='homeTitle'>
                     <div className='home-container'>
                         <div className='home__profile'>
