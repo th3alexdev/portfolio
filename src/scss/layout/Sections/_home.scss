@@ -167,11 +167,12 @@
         &-text {
             grid-row: 2 / 3;
             line-height: 24px;
-            font-size: 1.2rem;
+            font-size: .85rem;
             margin-bottom: 45px;
             max-width: 445px;
 
             @media(min-width: 600px) {
+                font-size: 1.2rem;
                 max-width: 650px;
                 line-height: 28px;
             }

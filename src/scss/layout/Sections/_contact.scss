@@ -95,17 +95,23 @@
 
         &__secondary {
             position: absolute;
-            bottom: -85px;
+            width: 95%;
+            bottom: -80px;
             left: 50%;
-            width: 100%;
             word-wrap: break-word;
             transform: translateX(-50%);
-            font-size: .90rem;
+            font-size: .75rem;
             font-weight: 600;
             font-family: f.getFont('main-font');
             display: grid;
             place-items: center;
             gap: 12px;
+
+            @media(min-width: 400px) {
+                bottom: -85px;
+                width: 100%;
+                font-size: .9rem;
+            }
 
             @media (min-width: 600px) {
                 left: 50%;
