@@ -10,7 +10,7 @@ import {
 import projects from './data/projects';
 import movies from './data/movies';
 import { useTranslation } from 'react-i18next'
-import './scss/styles.scss'
+import './css/styles.prefix.css'
 
 function App() {
     const [on, toggle] = useToggle(false);
