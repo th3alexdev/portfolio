@@ -1,17 +1,20 @@
 @font-face {
-    font-family: "Syne Bold";
-    src: url("/fonts/Syne/Syne-Bold.ttf") format("truetype");
+    font-family: "Syne";
+    src: url("/public/fonts/Syne/Syne-Bold.ttf") format("truetype");
+    font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Mona Sans";
-    src: url("/fonts/Mona_Sans/Mona-Sans-ExtraBold.woff2") format("woff2");
+    font-family: "Mona-Sans";
+    src: url("/public/fonts/Mona_Sans/Mona-Sans-ExtraBold.woff2") format("woff2");
     font-display: swap;
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: "Mona Sans Narrow";
-    src: url("/fonts/Mona_Sans/Mona-Sans-BlackNarrow.woff2") format("woff2");
+    font-family: "Mona-Sans Narrow";
+    src: url("/public/fonts/Mona_Sans/Mona-Sans-BlackNarrow.woff2") format("woff2");
     font-display: swap;
+    font-weight: 500;
 }
