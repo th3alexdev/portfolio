@@ -49,7 +49,7 @@ function HeaderNav({ on, toggle }) {
           </li>
         </ul>
         <a 
-          href='https://drive.google.com/file/d/1VjgsjJ6tcGK0EOA0jecl8geDnz2a-HoH/view?usp=sharing' target='_blank'
+          href='https://drive.google.com/file/d/1LU0qqI6FlOI-cw-gABqgH_68GIBsx3SL/view?usp=sharing' target='_blank'
           className='link main-link mirror-bg tooltip header-nav__btn header-nav-view-resume' 
           data-tooltip={t('header.tooltip.resume')} role='button'>
             <span>{t('header.resume')}</span>
