@@ -1,5 +1,6 @@
-export default function SliderCard({ movie }) {
+import React from "react";
 
+export default function SliderCard({ movie }) {
   const { title, year, director, img } = movie;
 
   return (
