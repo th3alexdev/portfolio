@@ -1,8 +1,7 @@
 import React from "react";
 import { useToggle } from "@uidotdev/usehooks";
-import { Card, ContactLinks, Footer, HeaderNav, SliderCard } from "./routes.js";
+import { Card, ContactLinks, Footer, HeaderNav, SliderWrapper } from "./routes.js";
 import projects from "./data/projects";
-import movies from "./data/movies";
 import { useTranslation } from "react-i18next";
 import "./scss/styles.scss";
 
@@ -98,21 +97,7 @@ function App() {
           </div>
         </section>
         <section className="wrapper">
-          <div className="slider">
-            <div className="slider-track">
-              {movies.map((movie, index) => (
-                <SliderCard movie={movie} key={index} />
-              ))}
-            </div>
-            <div className="slider-track">
-              {movies.map((movie, index) => (
-                <SliderCard movie={movie} key={index} />
-              ))}
-            </div>
-          </div>
-          <div className="wrapper-text">
-            <h3>{t("movies.title")}</h3>
-          </div>
+          <SliderWrapper />
         </section>
         <section
           id="contact"
