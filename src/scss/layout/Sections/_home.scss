@@ -32,7 +32,8 @@
     justify-content: center;
     overflow: hidden;
 
-    @media (min-width: 850px) {
+    @media (min-width: 850px) and (min-height: 700px) {
+        background: red;
         height: 100vh;
         max-height: 1300px;
     }

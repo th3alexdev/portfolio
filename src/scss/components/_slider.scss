@@ -20,6 +20,7 @@
         transform: translateX(-50%);
         text-align: center;
         text-wrap: balance;
+        max-width: 420px;
 
         @media (min-width: 400px) and (max-width: 749px) {
             width: 65%;
