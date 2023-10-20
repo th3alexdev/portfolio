@@ -3,6 +3,7 @@ css/
 notes.txt
 example.js
 src/css/
+package-lock.json
 
 # Logs
 logs
